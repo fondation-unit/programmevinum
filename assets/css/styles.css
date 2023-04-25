@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Satoshi-Light";
+  src: local("Satoshi-Light"),
+    url("../fonts/Satoshi-Light.ttf") format("truetype"),
+    url("../fonts/Satoshi-Light.woff2") format("woff2"),
+    url("../fonts/Satoshi-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: local("Satoshi-Bold"),
+    url("../fonts/Satoshi-Bold.ttf") format("truetype"),
+    url("../fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("../fonts/Satoshi-Bold.woff") format("woff");
+}
+
+path {
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: draw 1s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Satoshi-Light', sans-serif;
+  font-size: 1.6rem;
+}
+
+svg {
+  width: 100%;
+}
+
+.container {
+  bottom: 0;
+  color: #f1f1f1;
+  height: 100vh;
+  width: 100%;
+  padding: 0px;
+}
+
+.container svg {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: auto;
+}
+
+.header {
+  bottom: 0%;
+  color: #f1f1f1;
+  width: auto;
+  padding: 40px;
+  background-color: rgba(29, 54, 48, 0.75);
+}
+
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.header .flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.header .slogan {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 300px;
+}
+
+.header .card-group {
+  bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  position: absolute;
+}
+
+.header .card-group .card {
+  background: rgba(255, 255, 255, 1);
+  color: #1d3630;
+  padding: 20px;
+  width: calc(100% / 3);
+  margin: 5px;
+  height: 180px;
+  transition: height 500ms ease-in-out;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header .card-group .card:first-child {
+  margin-left: 0;
+  background: #ccdbc8;
+  color: #1d3630;
+}
+
+.header .card-group .card:last-child {
+  margin-right: 0;
+  background: #e8b691;
+  color: #000000;
+}
+
+.header .card-group .card:hover {
+  height: 220px;
+}
+
+.header .card-group .card .action {
+  font-family: 'Satoshi-Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: .75em;
+}
+
+.header .card-group .card .action .arrow {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 30px;
+  justify-content: center;
+  margin-right: 5px;
+  overflow: hidden;
+  position: relative;
+  background-color: #1d3630;
+  width: 30px;
+  height: 30px;
+}
+
+.header .card-group .card:last-child .action .arrow {}
+
+.header .card-group .card .action .arrow svg {
+  position: relative;
+  display: block;
+  width: 15px;
+}
+
+.content {
+  padding: 40px;
+}
+
+.container#first {
+  background: #ccdbc8;
+  margin-top: 60px;
+  color: #1d3630;
+}
+
+.container#second {
+  background: #FFFFFF;
+  color: #1d3630;
+}
+
+.container#third {
+  background: #e8b691;
+  color: #000000;
+}
+
+footer {
+  padding: 40px;
+  background: #FFFFFF;
+  color: #000000;
+}

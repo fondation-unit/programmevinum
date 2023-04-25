@@ -1,0 +1,365 @@
+@font-face {
+  font-family: "JetBrainsMono-Light";
+  src: local("JetBrainsMono-Light"),
+    url("JetBrainsMono-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-Light";
+  src: local("Satoshi-Light"),
+    url("../fonts/Satoshi-Light.ttf") format("truetype"),
+    url("../fonts/Satoshi-Light.woff2") format("woff2"),
+    url("../fonts/Satoshi-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: local("Satoshi-Bold"),
+    url("../fonts/Satoshi-Bold.ttf") format("truetype"),
+    url("../fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("../fonts/Satoshi-Bold.woff") format("woff");
+}
+
+path {
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: draw 2s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes append {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes write {
+  from {
+    transform: translate(-20px, 30px) rotate(3deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes writeBis {
+  from {
+    transform: translate(20px, 30px) rotate(-3deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Satoshi-Light', sans-serif;
+  font-size: 1em;
+  background: #ccdbc8;
+}
+
+.header-container {
+  bottom: 0;
+  color: #f1f1f1;
+  height: 100vh;
+  width: 100%;
+  padding: 0px;
+}
+
+.header-container svg#pattern {
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  width: auto;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.header-aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: calc(100vh + 60px);
+  top: -40px;
+  border-left: 1px solid #8ea18c;
+}
+
+.nav {
+  position: fixed;
+  padding: 0 0 0 40px;
+  width: 100%;
+}
+
+.nav.solid {
+  background: #FFFFFF;
+}
+
+.nav .nav-inner {
+  display: flex;
+  padding: 10px 0px;
+  border-bottom: 1px solid #8ea18c;
+}
+
+.nav .nav-inner .part-title-zone {
+  color: #8ea18c;
+  text-transform: uppercase;
+  padding-top: 2px;
+  margin-left: 20px;
+}
+
+.nav .nav-inner .part-title-zone.append {
+  animation: append 500ms ease-in-out;
+}
+
+.nav .scroller {
+  height: 2px;
+  background-color: rgb(29, 54, 48);
+  display: flex;
+  justify-content: flex-start;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  margin-top: -2px
+}
+
+.header {
+  bottom: 0%;
+  color: rgb(29, 54, 48);
+  width: auto;
+  padding: 40px;
+}
+
+.header .flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.header .flex .slogan {
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-bottom: 300px;
+  padding-right: 40px;
+}
+
+.header .flex .slogan .logo {
+  font-family: "JetBrainsMono-Light";
+  font-weight: 100;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+.header .flex .slogan .slogan-main {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.header .flex .slogan .slogan-main div {
+  margin: 0 8px;
+  animation: write 0.5s linear forwards;
+}
+
+.header .flex .slogan .slogan-main div {
+  opacity: 0;
+  margin: 0 8px;
+  animation: write 0.5s linear forwards;
+}
+
+.header .flex .slogan .slogan-main div:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.header .flex .slogan .slogan-main div:nth-child(3) {
+  animation-delay: .5s;
+}
+
+.header .flex .slogan .slogan-main div:last-child {
+  margin-right: 0
+}
+
+.header .flex .card-group-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.header .flex .card-group-wrapper .card-group {
+  position: absolute;
+  width: 100%;
+  max-width: 1080px;
+  bottom: 70px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header .flex .card-group-wrapper .card-group .card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: height 500ms ease-in-out;
+  padding: 20px;
+  width: calc(100% / 3);
+  margin: 5px;
+  height: 180px;
+  border: 2px solid rgb(29, 54, 48);
+  background-color: #ccdbc8;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.header .flex .card-group-wrapper .card-group .card:hover {
+  height: 210px;
+  background-color: #1d3630;
+  background-image: url(../images/pattern-empire.svg);
+  background-size: 120%;
+  background-position: 20%;
+  cursor: pointer;
+}
+
+.header .flex .card-group-wrapper .card-group .card .card-text {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.header .flex .card-group-wrapper .card-group .card:hover .card-text,
+.header .flex .card-group-wrapper .card-group .card:hover .action .arrow {
+  color: white
+}
+
+.header .flex .card-group-wrapper .card-group .card:hover .action .arrow {
+  background-color: white;
+}
+
+.header .flex .card-group-wrapper .card-group .card:hover .action {
+  color: white;
+}
+
+.header .flex .card-group-wrapper .card-group .card:hover .action .arrow svg {
+  fill: #1d3630;
+}
+
+.header .flex .card-group-wrapper .card-group .card .action {
+  font-family: 'Satoshi-Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: .7em;
+}
+
+.header .flex .card-group-wrapper .card-group .card .action .arrow {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 30px;
+  justify-content: center;
+  margin-right: 5px;
+  overflow: hidden;
+  position: relative;
+  background-color: #1d3630;
+  width: 30px;
+  height: 30px;
+}
+
+.header .card-group .card .action .arrow svg {
+  position: relative;
+  display: block;
+  width: 15px;
+}
+
+.content {
+  padding: 40px;
+}
+
+.maxed-container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maxed-container .flex {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.maxed-container .flex .item {
+  width: 50%;
+}
+
+.maxed-container .flex .item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.maxed-container .flex .item p:first-child {
+  margin-top: 0;
+}
+
+.container .part-title {
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #8ea18c;
+  padding: 20px 40px;
+}
+
+.container .part-title span {
+  color: black;
+}
+
+.container#first {
+  background: #FFFFFF;
+  margin-top: 60px;
+  color: #1d3630;
+  z-index: 1;
+  font-size: 1.25em;
+}
+
+.container#second {
+  background: #FFFFFF;
+  color: #1d3630;
+  font-size: 1.25em;
+}
+
+.container#third {
+  background: #e8b691;
+  color: #000000;
+  font-size: 1.25em;
+}
+
+footer {
+  padding: 40px;
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 1.25em;
+}

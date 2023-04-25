@@ -7,12 +7,13 @@ function setWindowHeight() {
 function scrolledIntoViewport() {
   var nav = document.querySelector(".nav");
   var partTitleZone = nav.querySelector(".part-title-zone");
-  var trigger = document.querySelector(".nav-trigger");
-  var inView = trigger.getBoundingClientRect().top < 0;
+  var triggers = document.querySelectorAll(".nav-trigger");
+  var triggerInView = Array.prototype.slice.call(triggers).filter(trigger => trigger.getBoundingClientRect().top < 0);
+  var activeTrigger = triggerInView[triggerInView.length - 1];
 
-  if (inView) {
+  if (activeTrigger) {
     nav.classList.add("solid");
-    var partTitle = addPartTitleToNav(trigger);
+    var partTitle = addPartTitleToNav(activeTrigger);
     partTitleZone.innerHTML = partTitle;
     partTitleZone.classList.add("append");
   } else {

@@ -82,9 +82,42 @@ var onScroll = (function () {
   return run;
 })();
 
+function menuActions() {
+  var menuTrigger = document.querySelector("#menu-trigger"),
+    menu = document.querySelector(".menu"),
+    menuHrefs = menu.querySelectorAll(".menu-href");
+
+  menuTrigger.addEventListener("click", function () {
+    if (menu.classList.contains("active")) {
+      menu.classList.remove("active");
+      menu.classList.add("close");
+    } else {
+      menu.classList.remove("close");
+      menu.classList.add("active");
+    }
+  });
+
+  Array.prototype.slice.call(menuHrefs).forEach(link => link.addEventListener("click", triggerCloseMenu))
+}
+
+function triggerCloseMenu(e) {
+  e.preventDefault();
+  var target = document.querySelector(e.target.getAttribute("href")),
+    menu = document.querySelector(".menu");
+
+  menu.classList.remove("active");
+  menu.classList.add("close");
+
+  window.scrollTo({
+    top: target.offsetTop,
+    behavior: 'smooth'
+  });
+}
+
 window.addEventListener("load", setWindowHeight, false);
+window.addEventListener("load", menuActions, false);
 window.addEventListener("resize", setWindowHeight, false);
-window.addEventListener("scroll", onScroll);
-window.addEventListener("scroll", scrolledIntoViewport);
-window.addEventListener("scroll", elementInViewport);
-window.addEventListener("scroll", setScrollerTransform);
+window.addEventListener("scroll", onScroll, false);
+window.addEventListener("scroll", scrolledIntoViewport, false);
+window.addEventListener("scroll", elementInViewport, false);
+window.addEventListener("scroll", setScrollerTransform, false);

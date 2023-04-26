@@ -1,0 +1,12 @@
+{
+  "name": "site",
+  "packageManager": "yarn@3.1.1",
+  "dependencies": {
+    "sass": "^1.62.1"
+  },
+  "scripts": {
+    "sass": "sass --watch --no-source-map src/sass/main.sass dist/style.css",
+    "sass:prod": "sass --no-source-map src/sass/main.sass dist/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

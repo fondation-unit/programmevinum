@@ -8,7 +8,7 @@ function scrolledIntoViewport() {
   var nav = document.querySelector(".nav"),
     partTitleZone = nav.querySelector(".part-title-zone"),
     triggers = document.querySelectorAll(".nav-trigger"),
-    triggerInView = Array.prototype.slice.call(triggers).filter(trigger => trigger.getBoundingClientRect().top < 0),
+    triggerInView = Array.prototype.slice.call(triggers).filter(trigger => trigger.getBoundingClientRect().top < 20),
     activeTrigger = triggerInView[triggerInView.length - 1];
 
   if (activeTrigger) {

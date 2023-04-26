@@ -5,11 +5,11 @@ function setWindowHeight() {
 }
 
 function scrolledIntoViewport() {
-  var nav = document.querySelector(".nav");
-  var partTitleZone = nav.querySelector(".part-title-zone");
-  var triggers = document.querySelectorAll(".nav-trigger");
-  var triggerInView = Array.prototype.slice.call(triggers).filter(trigger => trigger.getBoundingClientRect().top < 0);
-  var activeTrigger = triggerInView[triggerInView.length - 1];
+  var nav = document.querySelector(".nav"),
+    partTitleZone = nav.querySelector(".part-title-zone"),
+    triggers = document.querySelectorAll(".nav-trigger"),
+    triggerInView = Array.prototype.slice.call(triggers).filter(trigger => trigger.getBoundingClientRect().top < 0),
+    activeTrigger = triggerInView[triggerInView.length - 1];
 
   if (activeTrigger) {
     nav.classList.add("solid");
@@ -28,10 +28,10 @@ function addPartTitleToNav(trigger) {
 }
 
 function setScrollerTransform() {
-  let scrollTop = window.scrollY;
-  let docHeight = document.body.offsetHeight;
-  let winHeight = window.innerHeight;
-  let scrollPercent = scrollTop / (docHeight - winHeight);
+  var scrollTop = window.scrollY,
+    docHeight = document.body.offsetHeight,
+    winHeight = window.innerHeight,
+    scrollPercent = scrollTop / (docHeight - winHeight);
 
   var scroller = document.querySelector(".scroller");
   scroller.style.transform = `scaleX(${scrollPercent})`;

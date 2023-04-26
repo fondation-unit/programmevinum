@@ -1,0 +1,44 @@
+.container
+  font-size: 1.25em
+
+  .part-title
+    text-transform: uppercase
+    font-size: .8em
+    color: #8ea18c
+    padding: 20px 40px
+
+    span
+      color: black
+
+  .content
+    padding: 40px
+
+    &.maxed-container
+      max-width: 1080px
+      margin-left: auto
+      margin-right: auto
+
+      .flex
+        display: flex
+        align-items: flex-start
+        flex-wrap: nowrap
+
+        .item
+          width: 50%
+
+          img
+            max-width: 100%
+            height: auto
+
+          p:first-child
+            margin-top: 0
+
+  &#first
+    background: #FFFFFF
+    margin-top: 60px
+    color: #1d3630
+    z-index: 1
+
+  &#second
+    background: #FFFFFF
+    color: #1d3630

@@ -1,0 +1,144 @@
+.header-container
+  bottom: 0
+  color: #f1f1f1
+  height: 100vh
+  width: 100%
+  padding: 0px
+
+  .header
+    bottom: 0%
+    color: rgb(29, 54, 48)
+    width: auto
+    padding: 40px
+
+    svg#pattern
+      position: absolute
+      left: 0
+      bottom: -60px
+      width: auto
+      z-index: 0
+      overflow: hidden
+
+    .flex
+      display: flex
+      justify-content: flex-start
+      flex-direction: column
+      height: 100%
+      position: relative
+
+      .header-aside
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        position: absolute
+        right: 0
+        width: 0
+        height: calc(100vh + 60px)
+        top: -40px
+        border-left: 1px solid #8ea18c
+
+      .slogan
+        flex: 1
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        margin-top: 50px
+        margin-bottom: 300px
+        padding-right: 40px
+
+        .logo
+          font-family: "JetBrainsMono-Light"
+          font-weight: 100
+          display: flex
+          justify-content: flex-end
+          font-size: 2em
+          line-height: 2em
+
+        .slogan-main
+          display: flex
+          justify-content: flex-end
+          margin-top: 20px
+
+          div
+            opacity: 0
+            margin: 0 8px
+            animation: write 0.5s linear forwards
+            &:nth-child(2)
+              animation-delay: 0.25s
+            &:nth-child(3)
+              animation-delay: .5s
+            &:last-child
+              margin-right: 0
+
+      .card-group-wrapper
+        display: flex
+        justify-content: center
+        flex-wrap: nowrap
+
+        .card-group
+          position: absolute
+          width: 100%
+          max-width: 1080px
+          bottom: 70px
+          display: flex
+          align-items: flex-end
+
+          .card
+            flex: 1
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            transition: height 500ms ease-in-out
+            padding: 20px
+            width: calc(100% / 3)
+            margin: 5px
+            height: 180px
+            border: 2px solid rgb(29, 54, 48)
+            background-color: #ccdbc8
+            font-size: 1.4em
+            font-weight: bold
+            &:hover
+              height: 210px
+              background-color: #1d3630
+              background-image: url(../src/images/pattern-empire.svg)
+              background-size: 120%
+              background-position: 20%
+              cursor: pointer
+              .card-text
+                color: #FFFFFF
+              .action
+                color: #FFFFFF
+                .arrow
+                  color: #FFFFFF
+                  background-color: #FFFFFF
+                  svg
+                    fill: #1d3630
+
+            .card-text
+              text-align: center
+              font-size: 1.2em
+
+            .action
+              font-family: 'Satoshi-Bold', sans-serif
+              text-transform: uppercase
+              font-size: .7em
+
+              .arrow
+                align-items: center
+                border-radius: 50%
+                display: inline-flex
+                height: 30px
+                justify-content: center
+                margin-right: 5px
+                overflow: hidden
+                position: relative
+                background-color: #1d3630
+                width: 30px
+                height: 30px
+
+                svg
+                  position: relative
+                  display: block
+                  width: 15px

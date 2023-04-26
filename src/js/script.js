@@ -1,3 +1,5 @@
+const IMG_FOLDER = "./src/images/";
+
 function setWindowHeight() {
   var windowHeight = window.innerHeight;
   var header = document.querySelector(".header");
@@ -87,8 +89,8 @@ function menuActions() {
     menu = document.querySelector(".menu"),
     menuHrefs = document.querySelectorAll(".menu-href"),
     nav = document.querySelector(".nav"),
+    menuTriggerIcon = nav.querySelector("#menu-trigger-icon"),
     body = document.querySelector("body");
-
 
   // Toggle menu behaviour
   menuTrigger.addEventListener("click", function () {
@@ -96,11 +98,13 @@ function menuActions() {
       menu.classList.remove("active");
       menu.classList.add("close");
       nav.classList.remove("menu-active");
+      menuTriggerIcon.src = IMG_FOLDER + "menu-icon.svg";
       body.style.overflow = "auto";
     } else {
       menu.classList.remove("close");
       menu.classList.add("active");
       nav.classList.add("menu-active");
+      menuTriggerIcon.src = IMG_FOLDER + "menu-close-icon.svg";
       body.style.overflow = "hidden";
     }
   });

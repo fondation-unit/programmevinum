@@ -1,3 +1,7 @@
+$write-x-translate: -20px
+$write-x-translate: 30px
+$write-deg: 3deg
+$write-delay: 0.5s
 
 @keyframes draw
   to
@@ -12,7 +16,7 @@
 
 @keyframes write
   from
-    transform: translate(-20px, 30px) rotate(3deg)
+    transform: translate(-$write-x-translate, $write-x-translate) rotate($write-deg)
     opacity: 0
 
   to
@@ -21,7 +25,7 @@
 
 @keyframes writeBis
   from
-    transform: translate(20px, 30px) rotate(-3deg)
+    transform: translate($write-x-translate, $write-x-translate) rotate(-$write-deg)
     opacity: 0
 
   to

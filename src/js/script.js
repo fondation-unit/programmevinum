@@ -86,6 +86,7 @@ function menuActions() {
   var menuTrigger = document.querySelector("#menu-trigger"),
     menu = document.querySelector(".menu"),
     menuHrefs = document.querySelectorAll(".menu-href"),
+    nav = document.querySelector(".nav"),
     body = document.querySelector("body");
 
 
@@ -94,10 +95,12 @@ function menuActions() {
     if (menu.classList.contains("active")) {
       menu.classList.remove("active");
       menu.classList.add("close");
+      nav.classList.remove("menu-active");
       body.style.overflow = "auto";
     } else {
       menu.classList.remove("close");
       menu.classList.add("active");
+      nav.classList.add("menu-active");
       body.style.overflow = "hidden";
     }
   });

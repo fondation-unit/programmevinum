@@ -9,6 +9,15 @@
   &.solid
     background: $white-color
     z-index: 1
+  &.menu-active
+    background: transparent
+    .nav-inner
+      border-bottom: 1px solid transparent
+      .nav-start
+        .part-title-zone
+          display: none
+    .scroller
+      background-color: transparent
 
   .nav-inner
     display: flex

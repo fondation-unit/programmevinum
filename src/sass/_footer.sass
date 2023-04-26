@@ -1,5 +1,19 @@
 footer
-  padding: $y-padding $x-padding
-  background: $white-color
-  color: $black-color
-  font-size: $text-font-size
+  display: flex
+  background: $empire-color
+  color: $white-color
+  font-size: calc($text-font-size * 0.8)
+  padding: calc($y-padding * 1.5) $x-padding
+
+  aside.footer-aside
+    flex-grow: 1
+    color: $white-color
+
+  ul.footer-menu
+    padding: 0
+    margin: 0
+    li
+      list-style-type: none
+      a
+        text-decoration: none
+        color: $menthe-color

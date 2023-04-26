@@ -58,14 +58,14 @@
         .slogan-main
           display: flex
           justify-content: flex-end
-          margin-top: $y-padding / 2
+          margin-top: calc($y-padding / 2)
 
           div
             opacity: 0
             margin: 0 8px
             animation: write $write-delay linear forwards
             &:nth-child(2)
-              animation-delay: $write-delay / 2
+              animation-delay: calc($write-delay / 2)
             &:nth-child(3)
               animation-delay: $write-delay
             &:last-child
@@ -139,4 +139,4 @@
                 svg
                   position: relative
                   display: block
-                  width: $arrow-size / 2
+                  width: calc($arrow-size / 2)

@@ -35,3 +35,10 @@
           font-size: 2em
           line-height: 2.5em
           color: $empire-color
+          padding: calc($y-padding / 4) calc($x-padding / 2)
+          background: transparent
+          background: linear-gradient(to left, transparent 50%, $menthe-color 50%) right
+          background-size: 200%
+          transition: .5s ease-out
+          &:hover
+            background-position: left

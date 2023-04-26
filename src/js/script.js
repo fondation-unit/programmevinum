@@ -85,16 +85,20 @@ var onScroll = (function () {
 function menuActions() {
   var menuTrigger = document.querySelector("#menu-trigger"),
     menu = document.querySelector(".menu"),
-    menuHrefs = menu.querySelectorAll(".menu-href");
+    menuHrefs = document.querySelectorAll(".menu-href"),
+    body = document.querySelector("body");
+
 
   // Toggle menu behaviour
   menuTrigger.addEventListener("click", function () {
     if (menu.classList.contains("active")) {
       menu.classList.remove("active");
       menu.classList.add("close");
+      body.style.overflow = "auto";
     } else {
       menu.classList.remove("close");
       menu.classList.add("active");
+      body.style.overflow = "hidden";
     }
   });
 
@@ -109,10 +113,12 @@ function menuActions() {
 function triggerCloseMenu(e) {
   e.preventDefault();
   var target = document.querySelector(e.target.getAttribute("href")),
-    menu = document.querySelector(".menu");
+    menu = document.querySelector(".menu"),
+    body = document.querySelector("body");
 
   menu.classList.remove("active");
   menu.classList.add("close");
+  body.style.overflow = "auto";
 
   scrollToTop(target);
 }

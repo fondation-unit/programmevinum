@@ -109,11 +109,14 @@
                 color: $white-color
               .action
                 color: $white-color
-                .arrow
+                a
                   color: $white-color
-                  background-color: $white-color
-                  svg
-                    fill: $empire-color
+                  text-decoration: none
+                  .arrow
+                    color: $white-color
+                    background-color: $white-color
+                    svg
+                      fill: $empire-color
 
             .card-text
               text-align: center
@@ -124,19 +127,23 @@
               text-transform: uppercase
               font-size: .7em
 
-              .arrow
-                align-items: center
-                border-radius: 50%
-                display: inline-flex
-                width: $arrow-size
-                height: $arrow-size
-                justify-content: center
-                margin-right: 5px
-                overflow: hidden
-                position: relative
-                background-color: $empire-color
+              a
+                color: $empire-color
+                text-decoration: none
 
-                svg
+                .arrow
+                  align-items: center
+                  border-radius: 50%
+                  display: inline-flex
+                  width: $arrow-size
+                  height: $arrow-size
+                  justify-content: center
+                  margin-right: 5px
+                  overflow: hidden
                   position: relative
-                  display: block
-                  width: calc($arrow-size / 2)
+                  background-color: $empire-color
+
+                  svg
+                    position: relative
+                    display: block
+                    width: calc($arrow-size / 2)

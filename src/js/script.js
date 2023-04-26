@@ -28,6 +28,19 @@ function scrolledIntoViewport() {
   }
 }
 
+function translatedIntoViewport() {
+  var triggers = document.querySelectorAll(".transition-inplace"),
+    triggerInView = Array.prototype.slice.call(triggers).filter(trigger => {
+      var rect = trigger.getBoundingClientRect()
+      return rect.top <= window.innerHeight && rect.bottom >= 500
+    }),
+    activeTrigger = triggerInView[triggerInView.length - 1];
+
+  if (activeTrigger) {
+    activeTrigger.classList.add("append");
+  }
+}
+
 function elementInViewport() {
   var triggers = document.querySelectorAll(".nav-trigger"),
     triggerInView = Array.prototype.slice.call(triggers).filter(trigger => {
@@ -141,6 +154,18 @@ function scrollToTop(target) {
   });
 }
 
+function setElementsInViewport() {
+  // Make the transitionning elements in view on load
+  var triggers = document.querySelectorAll(".nav-trigger, .transition-inplace");
+  Array.prototype.slice.call(triggers).filter(trigger => {
+    var rect = trigger.getBoundingClientRect()
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+      trigger.classList.add("append");
+    }
+  });
+}
+
+window.addEventListener("load", setElementsInViewport, false)
 window.addEventListener("load", setWindowHeight, false);
 window.addEventListener("load", menuActions, false);
 window.addEventListener("resize", setWindowHeight, false);
@@ -148,3 +173,4 @@ window.addEventListener("scroll", onScroll, false);
 window.addEventListener("scroll", scrolledIntoViewport, false);
 window.addEventListener("scroll", elementInViewport, false);
 window.addEventListener("scroll", setScrollerTransform, false);
+window.addEventListener("scroll", translatedIntoViewport, false);

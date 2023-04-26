@@ -13,9 +13,12 @@ function scrolledIntoViewport() {
 
   if (activeTrigger) {
     nav.classList.add("solid");
-    var partTitle = addPartTitleToNav(activeTrigger);
-    partTitleZone.innerHTML = partTitle;
+    var partTitle = addPartTitleToNav(activeTrigger),
+      line = partTitle.querySelector(".line")
+
+    partTitleZone.innerHTML = partTitle.innerHTML;
     partTitleZone.classList.add("append");
+    line.classList.add("append");
   } else {
     nav.classList.remove("solid");
     partTitleZone.classList.remove("append");
@@ -23,8 +26,24 @@ function scrolledIntoViewport() {
   }
 }
 
+function elementInViewport() {
+  var triggers = document.querySelectorAll(".nav-trigger"),
+    triggerInView = Array.prototype.slice.call(triggers).filter(trigger => {
+      var rect = trigger.getBoundingClientRect()
+      return rect.top <= window.innerHeight && rect.bottom >= 0
+    }),
+    activeTrigger = triggerInView[triggerInView.length - 1];
+
+  if (activeTrigger) {
+    var partTitle = addPartTitleToNav(activeTrigger),
+      line = partTitle.querySelector(".line");
+
+    line.classList.add("append");
+  }
+}
+
 function addPartTitleToNav(trigger) {
-  return trigger.firstChild.nextElementSibling.innerHTML;
+  return trigger.firstChild.nextElementSibling;
 }
 
 function setScrollerTransform() {
@@ -67,4 +86,5 @@ window.addEventListener("load", setWindowHeight, false);
 window.addEventListener("resize", setWindowHeight, false);
 window.addEventListener("scroll", onScroll);
 window.addEventListener("scroll", scrolledIntoViewport);
+window.addEventListener("scroll", elementInViewport);
 window.addEventListener("scroll", setScrollerTransform);

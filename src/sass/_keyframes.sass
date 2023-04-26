@@ -31,3 +31,19 @@ $write-delay: 0.5s
   to
     transform: translate(0px) rotate(0deg)
     opacity: 1
+
+@keyframes lineOpacity
+  from
+    opacity: 0
+    transform: rotate(calc(0.25turn / 2)) translateY(30px) translateX(-55px)
+
+  to
+    opacity: 1
+    transform: rotate(calc(0.25turn / 2)) translateY(0px) translateX(0px)
+
+@keyframes zIndex
+  from
+    z-index: -1
+
+  to
+    z-index: 0

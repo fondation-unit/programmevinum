@@ -1,5 +1,6 @@
 .container
   font-size: $text-font-size
+  padding: calc($y-padding * 1.5) $x-padding
 
   .part-title
     display: inline-flex
@@ -56,11 +57,11 @@
 
       .flex
         display: flex
-        align-items: flex-start
         flex-wrap: nowrap
 
         .item
           width: 50%
+          align-self: center
 
           &:first-child
             margin-right: calc($x-padding / 2)

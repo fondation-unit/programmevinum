@@ -15,24 +15,38 @@
     padding: 11px 0px
     border-bottom: 1px solid $celadon-color
 
-    .part-title-zone
-      color: $celadon-color
-      font-family: $headings-font
-      text-transform: uppercase
-      padding-top: 4px
-      margin-left: calc($x-padding / 2 + 15px)
+    .nav-start
+      display: inline-flex
+      flex-grow: 1
+      .nav-logo
+        &:hover
+          cursor: pointer
+        .site-logo
+          &:hover
+            cursor: pointer
 
-      &.append
-        animation: append 500ms ease-in-out
-        &::before
-          content: ""
-          position: absolute
-          width: 5px
-          height: 5px
-          margin-left: -18px
-          margin-top: 8px
-          background: $empire-color
-          border-radius: 50%
+      .part-title-zone
+        color: $celadon-color
+        font-family: $headings-font
+        text-transform: uppercase
+        padding-top: 4px
+        margin-left: calc($x-padding / 2 + 15px)
+
+        &.append
+          animation: append 500ms ease-in-out
+          &::before
+            content: ""
+            position: absolute
+            width: 5px
+            height: 5px
+            margin-left: -18px
+            margin-top: 8px
+            background: $empire-color
+            border-radius: 50%
+
+    #menu-trigger
+      justify-content: flex-end
+      margin-right: calc($x-padding + $x-padding / 2)
 
   .scroller
     height: 2px

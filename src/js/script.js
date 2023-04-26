@@ -87,6 +87,7 @@ function menuActions() {
     menu = document.querySelector(".menu"),
     menuHrefs = menu.querySelectorAll(".menu-href");
 
+  // Toggle menu behaviour
   menuTrigger.addEventListener("click", function () {
     if (menu.classList.contains("active")) {
       menu.classList.remove("active");
@@ -97,7 +98,12 @@ function menuActions() {
     }
   });
 
-  Array.prototype.slice.call(menuHrefs).forEach(link => link.addEventListener("click", triggerCloseMenu))
+  // Bind click event on menu items
+  Array.prototype.slice.call(menuHrefs).forEach(link => link.addEventListener("click", triggerCloseMenu, false));
+
+  // Make logo clickable to scroll to top
+  var logo = document.querySelector(".site-logo");
+  logo.addEventListener("click", function () { scrollToTop(logo) }, false);
 }
 
 function triggerCloseMenu(e) {
@@ -108,6 +114,10 @@ function triggerCloseMenu(e) {
   menu.classList.remove("active");
   menu.classList.add("close");
 
+  scrollToTop(target);
+}
+
+function scrollToTop(target) {
   window.scrollTo({
     top: target.offsetTop,
     behavior: 'smooth'

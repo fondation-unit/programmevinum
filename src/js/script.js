@@ -41,7 +41,7 @@ function translatedIntoViewport() {
   }
 }
 
-function elementInViewport() {
+function navTriggerInViewport() {
   var triggers = document.querySelectorAll(".nav-trigger"),
     triggerInView = Array.prototype.slice.call(triggers).filter(trigger => {
       var rect = trigger.getBoundingClientRect()
@@ -171,6 +171,6 @@ window.addEventListener("load", menuActions, false);
 window.addEventListener("resize", setWindowHeight, false);
 window.addEventListener("scroll", onScroll, false);
 window.addEventListener("scroll", scrolledIntoViewport, false);
-window.addEventListener("scroll", elementInViewport, false);
+window.addEventListener("scroll", navTriggerInViewport, false);
 window.addEventListener("scroll", setScrollerTransform, false);
 window.addEventListener("scroll", translatedIntoViewport, false);

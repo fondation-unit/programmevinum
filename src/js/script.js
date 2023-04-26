@@ -121,10 +121,14 @@ function triggerCloseMenu(e) {
   e.preventDefault();
   var target = document.querySelector(e.target.getAttribute("href")),
     menu = document.querySelector(".menu"),
+    nav = document.querySelector(".nav"),
+    menuTriggerIcon = nav.querySelector("#menu-trigger-icon"),
     body = document.querySelector("body");
 
   menu.classList.remove("active");
   menu.classList.add("close");
+  nav.classList.remove("menu-active");
+  menuTriggerIcon.src = IMG_FOLDER + "menu-icon.svg";
   body.style.overflow = "auto";
 
   scrollToTop(target);

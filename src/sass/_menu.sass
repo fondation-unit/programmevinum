@@ -18,15 +18,19 @@
 
   .menu-container
     display: flex
+    flex-direction: column
     align-items: center
     width: 100%
     height: 100%
     ul.menu-links
+      display: flex
+      flex: 1
       flex-direction: column
       justify-content: center
       width: 100%
       margin: 0
       padding: 0
+      padding-top: calc($y-padding * 1.8)
       li.menu-link
         text-align: center
         a
@@ -43,3 +47,30 @@
           transition: .5s ease-out
           &:hover
             background-position: left
+    .footer-menu
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      padding-bottom: calc($x-padding / 4)
+      width: 100%
+      .footer-aside
+        flex: 1
+        padding-left: $x-padding
+      ul:last-child
+        padding-right: $x-padding
+      ul
+        &:first-child
+          padding-left: 0
+        li
+          list-style-type: none
+          a
+            font-family: $bold-font
+            font-size: 1.1em
+            color: $empire-color
+            text-decoration: none
+        .social-link
+          .btn-social
+            .bi
+              path
+                fill: $abricot-color

@@ -53,10 +53,14 @@
             background: $empire-color
             border-radius: 50%
 
-    #menu-trigger
+    button#menu-trigger
+      border: none
+      background: transparent
       justify-content: flex-end
       margin-right: $x-padding
       padding: 2px calc($x-padding / 2) 0 calc($x-padding / 2)
+      &:hover
+        cursor: pointer
 
       img
         width: 25px

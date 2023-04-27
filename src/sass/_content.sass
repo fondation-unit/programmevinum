@@ -9,6 +9,7 @@
     font-family: $headings-font
     font-size: 1.1em
     padding: $x-content-padding $x-padding
+    margin-bottom: calc($y-padding * 0.75)
     span
       background-color: $empire-color
       color: $white-color
@@ -60,23 +61,37 @@
         flex-wrap: nowrap
 
         .item
+          display: flex
+          flex-direction: column
           width: 50%
           align-self: center
+          &-grow
+            flex: 1
+            width: auto
+          &-no-width
+            width: auto
+          &-row
+            flex-direction: row
+            &-center
+              justify-content: center
 
           &:first-child
-            margin-right: calc($x-padding / 2)
+            margin-right: calc($x-padding / 1.1)
           &:last-child
-            margin-left: calc($x-padding / 2)
+            margin-left: calc($x-padding / 1.1)
 
-          p:first-child
-            margin-top: 0
+          p
+            &:first-child
+              margin-top: 0
+            &:last-child
+              margin-top: 0
 
-  &#utilisez-les-services-vinum
+  &#decouvrez-le-programme
     background: $white-color
     margin-top: 60px
     color: $empire-color
 
-  &#rejoignez-nous
+  &#utilisez-les-services-vinum
     color: $white-color
     background-image: $empire-bg
     background-color: $empire-color
@@ -84,6 +99,7 @@
     background-repeat: repeat
     background-position-x: 100px
     background-position-y: 100%
+    background-attachment: fixed
     .part-title
       span
         background-color: $menthe-color
@@ -95,7 +111,7 @@
         &::after
           background: $menthe-color
 
-  &#decouvrez-le-programme
+  &#rejoignez-nous
     background: $menthe-color
     color: $empire-color
     .part-title
@@ -109,7 +125,7 @@
         &::after
           background: $empire-color
 
-  &#suivez-nous
+  &#retrouvez-nous
     background: $white-color
     color: $empire-color
     .part-title

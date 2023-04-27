@@ -1,6 +1,5 @@
-$write-x-translate: -10px
-$write-x-translate: 20px
-$write-deg: 3deg
+$write-y-translate: -5px
+$write-x-translate: 10px
 $write-delay: 0.5s
 
 @keyframes draw
@@ -16,11 +15,11 @@ $write-delay: 0.5s
 
 @keyframes write
   from
-    transform: translate(-$write-x-translate, $write-x-translate) rotate($write-deg)
+    transform: translate($write-y-translate, $write-x-translate)
     opacity: 0
 
   to
-    transform: translate(0px) rotate(0deg)
+    transform: translate(0px)
     opacity: 1
 
 @keyframes lineOpacity

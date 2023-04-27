@@ -399,12 +399,11 @@ svg path {
 
 .container {
   font-size: 1.25em;
-  padding: 60px 40px;
+  padding: 100px 40px 120px 40px;
 }
 .container .part-title {
   display: inline-flex;
   align-items: center;
-  margin-top: 40px;
   text-transform: uppercase;
   font-family: "JetBrainsMono-Bold";
   font-size: 1.1em;
@@ -520,7 +519,6 @@ svg path {
 }
 .container#suivez-nous {
   background: #FFFFFF;
-  margin-top: 60px;
   color: #1d3630;
 }
 .container#suivez-nous .part-title span {
@@ -559,7 +557,6 @@ svg path {
 .grid-container .gallery__item .gallery__img:hover {
   transform: scale(1.05);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-  border-radius: 4px;
 }
 .grid-container .gallery__item--1 {
   grid-area: 1/1/4/4;

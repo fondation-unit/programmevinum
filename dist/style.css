@@ -312,13 +312,13 @@ svg path {
   background-size: 300%;
 }
 .header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(1) .card-text a {
-  color: #000000;
+  color: #1d3630;
 }
 .header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(1) .action a {
-  color: #000000;
+  color: #1d3630;
 }
 .header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(1) .action a .arrow {
-  background-color: #000000;
+  background-color: #1d3630;
 }
 .header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(1) .action a .arrow svg {
   fill: #FFFFFF;

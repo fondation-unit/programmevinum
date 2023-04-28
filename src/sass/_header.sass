@@ -109,21 +109,46 @@
             //  background-color: $menthe-color
             //&:nth-child(3)
             //  background-color: $aurore-color
-            .card-text
-              a
-                color: $black-color
-              .action
-                a
-                  color: $black-color
-                  .arrow
-                    background-color: $black-color
             &:hover
               height: 210px
-              background-color: $empire-color
-              background-image: $empire-background
+              //background-color: $empire-color
+              background-image: url(../src/images/pattern.svg)
               background-size: 120%
-              background-position: 20%
+              background-position: 100% 77%
+              //background-size: 120%
+              //background-position: 20%
               cursor: pointer
+              &:nth-child(1)
+                background-color: $white-color
+                background-image: $menu-pattern
+                background-size: 300%
+                .card-text
+                  a
+                    color: $black-color
+                .action
+                  a
+                    color: $black-color
+                    .arrow
+                      background-color: $black-color
+                      svg
+                        fill: $white-color
+              &:nth-child(2)
+                background-color: $imperial-color
+              &:nth-child(3)
+                background-color: $aurore-color
+                background-image: url(../src/images/pattern-white.svg)
+                background-size: 200%
+                background-position: 0%
+                .card-text
+                  a
+                    color: $black-color
+                .action
+                  a
+                    color: $black-color
+                    .arrow
+                      background-color: $black-color
+                      svg
+                        fill: $white-color
               .card-text
                 color: $white-color
                 a
@@ -147,8 +172,9 @@
               background-position: 100%
 
             .card-text
+              font-family: $bold-font
+              font-size: calc($text-font-size * 0.9)
               text-align: center
-              font-size: $text-font-size
               a
                 color: $empire-color
                 text-decoration: none

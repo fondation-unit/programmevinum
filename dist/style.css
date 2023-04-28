@@ -22,6 +22,24 @@
   margin-bottom: 40px !important;
 }
 
+.ml-wide {
+  margin-left: 72px !important;
+}
+@media (max-width: 1280px) {
+  .ml-wide {
+    margin-left: 20px !important;
+  }
+}
+
+.mr-wide {
+  margin-right: 72px !important;
+}
+@media (max-width: 1280px) {
+  .mr-wide {
+    margin-right: 20px !important;
+  }
+}
+
 .p-0 {
   padding: 0 !important;
 }
@@ -632,6 +650,14 @@ svg path {
 .container .content.maxed-container .flex .item-row-center {
   justify-content: center;
 }
+.container .content.maxed-container .flex .item-40 {
+  width: 40%;
+  align-self: flex-start;
+}
+.container .content.maxed-container .flex .item-60 {
+  width: 60%;
+  align-self: flex-start;
+}
 .container .content.maxed-container .flex .item:first-child {
   margin-right: 36.3636363636px;
 }
@@ -705,6 +731,28 @@ svg path {
 }
 .container#retrouvez-nous .part-title .line::after {
   background: #4d5a4c;
+}
+
+.sep {
+  height: 1px;
+  background-color: #1d3630;
+  margin: 40px 0;
+}
+.sep-2x {
+  margin: 44px 0;
+}
+
+legend {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85em;
+}
+legend a {
+  display: flex;
+  justify-content: center;
+}
+legend a img {
+  margin-top: 13.3333333333px;
 }
 
 .img-fluid {

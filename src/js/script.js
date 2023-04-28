@@ -180,6 +180,7 @@ function setElementsInViewport() {
 window.addEventListener("load", setElementsInViewport, false)
 window.addEventListener("load", setWindowHeight, false);
 window.addEventListener("load", menuActions, false);
+window.addEventListener("load", scrolledIntoViewport, false);
 window.addEventListener("resize", setWindowHeight, false);
 window.addEventListener("scroll", onScroll, false);
 window.addEventListener("scroll", scrolledIntoViewport, false);

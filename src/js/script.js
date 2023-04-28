@@ -105,6 +105,7 @@ function menuActions() {
   var menuTrigger = document.querySelector("#menu-trigger"),
     menu = document.querySelector(".menu"),
     menuHrefs = document.querySelectorAll(".menu-href"),
+    menuHrefsSecondary = document.querySelectorAll(".menu-href-secondary"),
     nav = document.querySelector(".nav"),
     menuTriggerIcon = nav.querySelector("#menu-trigger-icon"),
     body = document.querySelector("body");
@@ -128,13 +129,16 @@ function menuActions() {
 
   // Bind click event on menu items
   Array.prototype.slice.call(menuHrefs).forEach(link => link.addEventListener("click", triggerCloseMenu, false));
+  if (menuHrefsSecondary) {
+    Array.prototype.slice.call(menuHrefsSecondary).forEach(link => link.addEventListener("click", triggerCloseMenu.bind(null, redirect = true), false));
+  }
 
   // Make logo clickable to scroll to top
   var logo = document.querySelector(".site-logo");
   logo.addEventListener("click", function () { scrollToTop(logo) }, false);
 }
 
-function triggerCloseMenu(e) {
+function triggerCloseMenu(e, redirect = false) {
   e.preventDefault();
   var target = document.querySelector(e.target.getAttribute("href")),
     menu = document.querySelector(".menu"),
@@ -148,7 +152,11 @@ function triggerCloseMenu(e) {
   menuTriggerIcon.src = IMG_FOLDER + "menu-icon.svg";
   body.style.overflow = "auto";
 
-  scrollToTop(target);
+  if (redirect) {
+    window.location = href;
+  } else {
+    scrollToTop(target);
+  }
 }
 
 function scrollToTop(target) {

@@ -14,6 +14,10 @@
   font-family: "Satoshi-Bold";
   src: local("Satoshi-Bold"), url("../src/fonts/Satoshi-Bold.ttf") format("truetype"), url("../src/fonts/Satoshi-Bold.woff2") format("woff2"), url("../src/fonts/Satoshi-Bold.woff") format("woff");
 }
+.ml-20 {
+  margin-left: 20px !important;
+}
+
 .mt-40 {
   margin-top: 40px !important;
 }
@@ -44,8 +48,16 @@
   padding: 0 !important;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .justify-content-center {
   justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 span.menu-dot {

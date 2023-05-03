@@ -1,0 +1,57 @@
+.flex-articles
+  display: flex
+  flex-wrap: wrap
+
+  .article-item
+    align-self: flex-start
+    width: calc(100% / 3)
+    padding: $x-padding
+    box-sizing: border-box
+    &:nth-child(3n - 2)
+      padding-left: 0
+    &:nth-child(3n)
+      padding-right: 0
+    @media (max-width: $max-container-width)
+      width: 50%
+      &:nth-child(odd)
+        padding-left: 0
+        padding-right: $x-padding
+      &:nth-child(even)
+        padding-left: $x-padding
+        padding-right: 0
+    @media (max-width: $min-container-width)
+      width: 100%
+      margin-bottom: calc($y-padding * 2)
+      &:nth-child(odd)
+        padding: 0
+      &:nth-child(even)
+        padding: 0
+
+    a.article-title
+      text-decoration: none
+
+      h3
+        font-family: $bold-font
+        color: $empire-color
+        transition: all .3s
+        &:hover
+          color: $celadon-color
+
+        .menu-dot
+          margin-bottom: 0.1em
+          margin-right: 0.2em
+
+    p
+      font-size: .9em
+
+    legend
+      display: inline-block
+      color: $celadon-color
+      font-size: .8em
+
+    .link
+      margin-top: calc($y-padding / 2)
+
+      a
+        font-family: $bold-font
+        color: $empire-color

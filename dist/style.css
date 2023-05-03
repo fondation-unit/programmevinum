@@ -14,6 +14,10 @@
   font-family: "Satoshi-Bold";
   src: local("Satoshi-Bold"), url("../src/fonts/Satoshi-Bold.ttf") format("truetype"), url("../src/fonts/Satoshi-Bold.woff2") format("woff2"), url("../src/fonts/Satoshi-Bold.woff") format("woff");
 }
+.ml-20 {
+  margin-left: 20px !important;
+}
+
 .mt-40 {
   margin-top: 40px !important;
 }
@@ -44,8 +48,16 @@
   padding: 0 !important;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .justify-content-center {
   justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 span.menu-dot {
@@ -848,6 +860,10 @@ legend a img {
   transition: all 0.3s;
 }
 
+.teaser-wrapper {
+  text-decoration: none;
+}
+
 .teaser {
   display: flex;
   align-self: flex-end;
@@ -1005,6 +1021,78 @@ footer ul.footer-menu li a {
 }
 .transition-inplace.append {
   animation: translateIntoViewport 900ms linear forwards;
+}
+
+.flex-articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-articles .article-item {
+  align-self: flex-start;
+  width: 33.3333333333%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.flex-articles .article-item:nth-child(3n-2) {
+  padding-left: 0;
+}
+.flex-articles .article-item:nth-child(3n) {
+  padding-right: 0;
+}
+@media (max-width: 1280px) {
+  .flex-articles .article-item {
+    width: 50%;
+  }
+  .flex-articles .article-item:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 40px;
+  }
+  .flex-articles .article-item:nth-child(even) {
+    padding-left: 40px;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .flex-articles .article-item {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .flex-articles .article-item:nth-child(odd) {
+    padding: 0;
+  }
+  .flex-articles .article-item:nth-child(even) {
+    padding: 0;
+  }
+}
+.flex-articles .article-item a.article-title {
+  text-decoration: none;
+}
+.flex-articles .article-item a.article-title h3 {
+  font-family: "Satoshi-Bold", sans-serif;
+  color: #1d3630;
+  transition: all 0.3s;
+}
+.flex-articles .article-item a.article-title h3:hover {
+  color: #8ea18c;
+}
+.flex-articles .article-item a.article-title h3 .menu-dot {
+  margin-bottom: 0.1em;
+  margin-right: 0.2em;
+}
+.flex-articles .article-item p {
+  font-size: 0.9em;
+}
+.flex-articles .article-item legend {
+  display: inline-block;
+  color: #8ea18c;
+  font-size: 0.8em;
+}
+.flex-articles .article-item .link {
+  margin-top: 20px;
+}
+.flex-articles .article-item .link a {
+  font-family: "Satoshi-Bold", sans-serif;
+  color: #1d3630;
 }
 
 html,

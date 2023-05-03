@@ -23,6 +23,7 @@ $x-content-padding: calc($x-padding / 2)
 
 // Sizes
 $max-container-width: 1280px
+$min-container-width: 768px
 $header-height: 50px
 $arrow-size: 30px
 
@@ -38,6 +39,8 @@ $line-width: 40px
 $grid-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
 
 // Utils
+.ml-20
+  margin-left: 20px !important
 .mt-40
   margin-top: 40px !important
 .mt-40
@@ -52,8 +55,12 @@ $grid-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px
     margin-right: calc($x-padding / 2) !important
 .p-0
   padding: 0 !important
+.d-flex
+  display: flex
 .justify-content-center
   justify-content: center
+.align-items-center
+  align-items: center
 
 span.menu-dot
   display: inline-block

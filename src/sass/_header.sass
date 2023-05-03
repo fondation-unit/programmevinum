@@ -119,6 +119,10 @@
                       svg
                         fill: $white-color
             &:nth-child(2)
+              .card
+                background-size: 160%
+                background-position: 0% 90%
+                animation-delay: calc($append-header-duration - 50ms)
               &:hover
                 .card
                   background-color: $imperial-color
@@ -133,6 +137,10 @@
                       svg
                         fill: $imperial-color
             &:nth-child(3)
+              .card
+                background-size: 130%
+                background-position: 100%
+                animation-delay: calc($append-header-duration * 2 - 100ms)
               &:hover
                 .card
                   background-color: $aurore-color
@@ -165,15 +173,6 @@
               opacity: 0
               animation: appendScale $append-header-duration linear forwards
               transition: height $append-header-duration ease-in-out
-
-              &:nth-child(2)
-                background-size: 160%
-                background-position: 0% 90%
-                animation-delay: calc($append-header-duration - 50ms)
-              &:nth-child(3)
-                background-size: 130%
-                background-position: 100%
-                animation-delay: calc($append-header-duration * 2 - 100ms)
 
               .card-text
                 font-family: $black-font

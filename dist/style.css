@@ -399,6 +399,11 @@ svg path {
 .header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(1):hover .card .action .arrow svg {
   fill: #FFFFFF;
 }
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(2) .card {
+  background-size: 160%;
+  background-position: 0% 90%;
+  animation-delay: 200ms;
+}
 .header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(2):hover .card {
   background-color: #4d5a4c;
 }
@@ -413,6 +418,11 @@ svg path {
 }
 .header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(2):hover .card .action .arrow svg {
   fill: #4d5a4c;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(3) .card {
+  background-size: 130%;
+  background-position: 100%;
+  animation-delay: 400ms;
 }
 .header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(3):hover .card {
   background-color: #e8b691;
@@ -447,16 +457,6 @@ svg path {
   opacity: 0;
   animation: appendScale 250ms linear forwards;
   transition: height 250ms ease-in-out;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card:nth-child(2) {
-  background-size: 160%;
-  background-position: 0% 90%;
-  animation-delay: 200ms;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card:nth-child(3) {
-  background-size: 130%;
-  background-position: 100%;
-  animation-delay: 400ms;
 }
 .header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .card-text {
   font-family: "Satoshi-Black", sans-serif;

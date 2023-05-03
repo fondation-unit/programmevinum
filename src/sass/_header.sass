@@ -92,102 +92,104 @@
           display: flex
           align-items: flex-end
 
-          .card
-            flex: 1
-            display: flex
-            flex-direction: column
-            justify-content: space-between
-            padding: 20px
+          .card-wrapper
+            text-decoration: none
             width: calc(100vw / 3)
-            margin: 5px
-            height: 180px
-            border: 2px solid $empire-color
-            background-color: $menthe-color
-            font-size: 1.4em
-            font-weight: bold
-            opacity: 0
-            animation: appendScale $append-header-duration linear forwards
-            transition: height $append-header-duration ease-in-out
             &:hover
-              height: 210px
-              background-image: $pattern-image
-              background-size: 120%
-              background-position: 100% 77%
-              cursor: pointer
-              &:nth-child(1)
-                background-color: $white-color
-                background-image: $menu-pattern
-                background-size: 300%
-                .card-text
-                  a
+              .card
+                height: 210px
+                background-image: $pattern-image
+                background-size: 120%
+                background-position: 100% 77%
+                cursor: pointer
+            &:nth-child(1)
+              &:hover
+                .card
+                  background-color: $white-color
+                  background-image: $menu-pattern
+                  background-size: 300%
+                  .card-text
                     color: $empire-color
-                .action
-                  a
+
+                  .action
                     color: $empire-color
+
                     .arrow
                       background-color: $empire-color
                       svg
                         fill: $white-color
-              &:nth-child(2)
-                background-color: $imperial-color
-              &:nth-child(3)
-                background-color: $aurore-color
-                background-image: $pattern-white-image
-                background-size: 200%
-                background-position: 0%
-                .card-text
-                  a
+            &:nth-child(2)
+              &:hover
+                .card
+                  background-color: $imperial-color
+                  .card-text
+                    color: $white-color
+
+                  .action
+                    color: $white-color
+
+                    .arrow
+                      background-color: $white-color
+                      svg
+                        fill: $imperial-color
+            &:nth-child(3)
+              &:hover
+                .card
+                  background-color: $aurore-color
+                  background-image: $pattern-white-image
+                  background-size: 200%
+                  background-position: 0%
+                  .card-text
                     color: $black-color
-                .action
-                  a
+
+                  .action
                     color: $black-color
+
                     .arrow
                       background-color: $black-color
                       svg
                         fill: $white-color
+
+            .card
+              flex: 1
+              display: flex
+              flex-direction: column
+              justify-content: space-between
+              padding: 20px
+              margin: 5px
+              height: 180px
+              border: 2px solid $empire-color
+              background-color: $menthe-color
+              font-size: 1.4em
+              font-weight: bold
+              opacity: 0
+              animation: appendScale $append-header-duration linear forwards
+              transition: height $append-header-duration ease-in-out
+
+              &:nth-child(2)
+                background-size: 160%
+                background-position: 0% 90%
+                animation-delay: calc($append-header-duration - 50ms)
+              &:nth-child(3)
+                background-size: 130%
+                background-position: 100%
+                animation-delay: calc($append-header-duration * 2 - 100ms)
+
               .card-text
-                color: $white-color
-                a
-                  color: $white-color
-                  text-decoration: none
+                font-family: $bold-font
+                font-size: calc($text-font-size * 0.9)
+                text-align: center
+                color: $empire-color
+
               .action
-                color: $white-color
-                a
-                  color: $white-color
-                  text-decoration: none
-                  .arrow
-                    color: $white-color
-                    background-color: $white-color
-                    svg
-                      fill: $empire-color
-            &:nth-child(2)
-              background-size: 160%
-              background-position: 0% 90%
-              animation-delay: calc($append-header-duration - 50ms)
-            &:nth-child(3)
-              background-size: 130%
-              background-position: 100%
-              animation-delay: calc($append-header-duration * 2 - 100ms)
-
-            .card-text
-              font-family: $bold-font
-              font-size: calc($text-font-size * 0.9)
-              text-align: center
-              a
+                font-family: $bold-font
+                text-transform: uppercase
+                text-align: center
+                font-size: .7em
                 color: $empire-color
-                text-decoration: none
-
-            .action
-              font-family: $bold-font
-              text-transform: uppercase
-              text-align: center
-              font-size: .7em
-
-              a
-                color: $empire-color
-                text-decoration: none
 
                 .arrow
+                  color: $empire-color
                   align-items: center
                   border-radius: 50%
                   display: inline-flex

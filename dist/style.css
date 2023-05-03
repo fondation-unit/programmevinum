@@ -363,13 +363,73 @@ svg path {
   display: flex;
   align-items: flex-end;
 }
-.header-container .header .flex .card-group-wrapper .card-group .card {
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper {
+  text-decoration: none;
+  width: 33.3333333333vw;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:hover .card {
+  height: 210px;
+  background-image: url(../src/images/pattern.svg);
+  background-size: 120%;
+  background-position: 100% 77%;
+  cursor: pointer;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(1):hover .card {
+  background-color: #FFFFFF;
+  background-image: url(../src/images/menu-pattern2.svg);
+  background-size: 300%;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(1):hover .card .card-text {
+  color: #1d3630;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(1):hover .card .action {
+  color: #1d3630;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(1):hover .card .action .arrow {
+  background-color: #1d3630;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(1):hover .card .action .arrow svg {
+  fill: #FFFFFF;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(2):hover .card {
+  background-color: #4d5a4c;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(2):hover .card .card-text {
+  color: #FFFFFF;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(2):hover .card .action {
+  color: #FFFFFF;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(2):hover .card .action .arrow {
+  background-color: #FFFFFF;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(2):hover .card .action .arrow svg {
+  fill: #4d5a4c;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(3):hover .card {
+  background-color: #e8b691;
+  background-image: url(../src/images/pattern-white.svg);
+  background-size: 200%;
+  background-position: 0%;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(3):hover .card .card-text {
+  color: #000000;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(3):hover .card .action {
+  color: #000000;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(3):hover .card .action .arrow {
+  background-color: #000000;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper:nth-child(3):hover .card .action .arrow svg {
+  fill: #FFFFFF;
+}
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  width: 33.3333333333vw;
   margin: 5px;
   height: 180px;
   border: 2px solid #1d3630;
@@ -380,102 +440,31 @@ svg path {
   animation: appendScale 250ms linear forwards;
   transition: height 250ms ease-in-out;
 }
-.header-container .header .flex .card-group-wrapper .card-group .card:hover {
-  height: 210px;
-  background-image: url(../src/images/pattern.svg);
-  background-size: 120%;
-  background-position: 100% 77%;
-  cursor: pointer;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(1) {
-  background-color: #FFFFFF;
-  background-image: url(../src/images/menu-pattern2.svg);
-  background-size: 300%;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(1) .card-text a {
-  color: #1d3630;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(1) .action a {
-  color: #1d3630;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(1) .action a .arrow {
-  background-color: #1d3630;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(1) .action a .arrow svg {
-  fill: #FFFFFF;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(2) {
-  background-color: #4d5a4c;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(3) {
-  background-color: #e8b691;
-  background-image: url(../src/images/pattern-white.svg);
-  background-size: 200%;
-  background-position: 0%;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(3) .card-text a {
-  color: #000000;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(3) .action a {
-  color: #000000;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(3) .action a .arrow {
-  background-color: #000000;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover:nth-child(3) .action a .arrow svg {
-  fill: #FFFFFF;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover .card-text {
-  color: #FFFFFF;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover .card-text a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover .action {
-  color: #FFFFFF;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover .action a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover .action a .arrow {
-  color: #FFFFFF;
-  background-color: #FFFFFF;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:hover .action a .arrow svg {
-  fill: #1d3630;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card:nth-child(2) {
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card:nth-child(2) {
   background-size: 160%;
   background-position: 0% 90%;
   animation-delay: 200ms;
 }
-.header-container .header .flex .card-group-wrapper .card-group .card:nth-child(3) {
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card:nth-child(3) {
   background-size: 130%;
   background-position: 100%;
   animation-delay: 400ms;
 }
-.header-container .header .flex .card-group-wrapper .card-group .card .card-text {
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .card-text {
   font-family: "Satoshi-Bold", sans-serif;
   font-size: 1.125em;
   text-align: center;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card .card-text a {
   color: #1d3630;
-  text-decoration: none;
 }
-.header-container .header .flex .card-group-wrapper .card-group .card .action {
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .action {
   font-family: "Satoshi-Bold", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 0.7em;
-}
-.header-container .header .flex .card-group-wrapper .card-group .card .action a {
   color: #1d3630;
-  text-decoration: none;
 }
-.header-container .header .flex .card-group-wrapper .card-group .card .action a .arrow {
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .action .arrow {
+  color: #1d3630;
   align-items: center;
   border-radius: 50%;
   display: inline-flex;
@@ -487,7 +476,7 @@ svg path {
   position: relative;
   background-color: #1d3630;
 }
-.header-container .header .flex .card-group-wrapper .card-group .card .action a .arrow svg {
+.header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .action .arrow svg {
   position: relative;
   display: block;
   width: 15px;

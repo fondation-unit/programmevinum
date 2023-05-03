@@ -1,10 +1,12 @@
 @font-face {
   font-family: "JetBrainsMono-Light";
-  src: local("JetBrainsMono-Light"), url("../src/fonts/JetBrainsMono-Light.woff2") format("woff2");
+  src: local("JetBrainsMono-Light"), url("../src/fonts/JetBrainsMono-Light.ttf") format("truetype"), url("../src/fonts/JetBrainsMono-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: "JetBrainsMono-Bold";
-  src: local("JetBrainsMono-Bold"), url("../src/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+  src: local("JetBrainsMono-Bold"), url("../src/fonts/JetBrainsMono-Bold.ttf") format("truetype"), url("../src/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
 }
 @font-face {
   font-family: "Satoshi-Light";
@@ -13,6 +15,12 @@
 @font-face {
   font-family: "Satoshi-Bold";
   src: local("Satoshi-Bold"), url("../src/fonts/Satoshi-Bold.ttf") format("truetype"), url("../src/fonts/Satoshi-Bold.woff2") format("woff2"), url("../src/fonts/Satoshi-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: local("Satoshi-Black"), url("../src/fonts/Satoshi-Black.ttf") format("truetype"), url("../src/fonts/Satoshi-Black.woff2") format("woff2"), url("../src/fonts/Satoshi-Black.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 .ml-20 {
   margin-left: 20px !important;
@@ -451,13 +459,13 @@ svg path {
   animation-delay: 400ms;
 }
 .header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .card-text {
-  font-family: "Satoshi-Bold", sans-serif;
+  font-family: "Satoshi-Black", sans-serif;
   font-size: 1.125em;
   text-align: center;
   color: #1d3630;
 }
 .header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .action {
-  font-family: "Satoshi-Bold", sans-serif;
+  font-family: "Satoshi-Black", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 0.7em;

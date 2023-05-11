@@ -5,12 +5,16 @@
   list-style-type: none
   align-items: flex-start
   flex-wrap: nowrap
+  @media (max-width: $sm-breakpoint)
+    flex-direction: column
 
   li
     flex-direction: row
     text-align: center
     font-size: $text-font-size
     transition: all .3s
+    @media (max-width: $sm-breakpoint)
+      margin-bottom: calc($y-padding * 0.5)
     &:hover
       a
         .bi

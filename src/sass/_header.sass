@@ -1,10 +1,12 @@
 .header-container
   bottom: 0
-  height: 100vh
+  height: auto
   width: 100%
   padding: 0px
   &.secondary
     height: 100%
+  @media (min-height: $min-header-height)
+    height: 100vh
 
   .header
     bottom: 0%
@@ -16,9 +18,12 @@
       position: absolute
       left: 0
       bottom: -60px
-      width: auto
+      width: 60%
       z-index: 0
       overflow: hidden
+      @media (max-width: $max-container-width)
+        width: 100vw
+        max-width: 100%
 
     .flex
       display: flex
@@ -58,6 +63,8 @@
             font-size: $logo-font-size
             line-height: $logo-font-size
             margin-bottom: calc($y-padding / 2)
+            @media (max-width: $sm-breakpoint)
+              justify-content: flex-start
 
           .slogan-main
             font-family: $headings-font
@@ -65,7 +72,8 @@
             font-size: .7em
             display: flex
             justify-content: flex-end
-
+            @media (max-width: $sm-breakpoint)
+              display: none
             div
               opacity: 0
               margin: 0 8px
@@ -79,6 +87,11 @@
                 margin-left: 0
                 margin-right: 0
 
+          .slogan-main-mobile
+            display: none
+            @media (max-width: $sm-breakpoint)
+              display: flex
+
       .card-group-wrapper
         display: flex
         justify-content: center
@@ -91,6 +104,11 @@
           bottom: 70px
           display: flex
           align-items: flex-end
+          @media (max-width: $lg-breakpoint) and (min-height: $min-header-height)
+            flex-direction: column
+            align-items: flex-start
+          @media (max-width: $sm-breakpoint)
+            display: none
 
           .card-wrapper
             text-decoration: none
@@ -102,6 +120,14 @@
                 background-size: 120%
                 background-position: 100% 77%
                 cursor: pointer
+            @media (max-width: $lg-breakpoint)
+              width: calc(100vw / 3.5)
+              &:hover
+                .card
+                  height: auto
+            @media (max-width: $sm-breakpoint)
+              width: 100%
+
             &:nth-child(1)
               &:hover
                 .card
@@ -173,12 +199,21 @@
               opacity: 0
               animation: appendScale $append-header-duration linear forwards
               transition: height $append-header-duration ease-in-out
+              @media (max-width: $lg-breakpoint)
+                height: auto
+                &:hover
+                  height: auto
 
               .card-text
                 font-family: $black-font
                 font-size: calc($text-font-size * 0.9)
                 text-align: center
                 color: $empire-color
+                @media (max-width: $lg-breakpoint)
+                  font-size: calc($text-font-size * 0.75)
+                  margin-bottom: 15px
+                @media (max-width: $md-breakpoint)
+                  font-size: calc($text-font-size * 0.65)
 
               .action
                 font-family: $black-font

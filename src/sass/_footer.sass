@@ -5,15 +5,27 @@ footer
   font-size: calc($text-font-size * 0.8)
   padding: calc($y-padding * 1.5) $x-padding
   flex-flow: row nowrap
+  @media (max-width: $sm-breakpoint)
+    flex-direction: column
+    padding: calc($y-padding * 1) calc($x-padding * 0.5)
+    text-align: center
 
   aside.footer-aside
     color: $white-color
     width: calc(100% / 3)
+    @media (max-width: $sm-breakpoint)
+      width: 100%
+      div
+        justify-content: center
 
   ul.footer-menu
     width: calc(100% / 3)
     padding: 0
     margin: 0
+    @media (max-width: $sm-breakpoint)
+      width: 100%
+      .menu-links
+        padding-left: 0
     li
       list-style-type: none
       a

@@ -16,6 +16,23 @@ a.news-wrapper
       span.dot
         background-color: $celadon-color
         animation: 2.5s ease infinite pulseAlt
+  &.top
+    @media (max-width: $lg-breakpoint) and (max-height: $min-header-height)
+      position: absolute
+      top: 10vh
+      align-self: flex-start
+    @media (min-width: $lg-breakpoint) and (max-height: $min-news-header-height)
+      position: absolute
+      top: 10vh
+      align-self: flex-start
+    @media (max-width: $sm-breakpoint)
+      position: relative
+      top: auto
+      display: flex
+      align-self: flex-start
+      margin-top: calc($y-padding * 0)
+      padding-right: 0
+
   .news
     font-family: $bold-font
     font-size: .9em

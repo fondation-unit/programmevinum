@@ -4,3 +4,10 @@
 
 .img-bordered
   box-shadow: $grid-box-shadow
+
+.img-container
+  @media (max-width: $sm-breakpoint)
+    display: flex
+    flex-direction: column
+    img
+      max-width: 50%

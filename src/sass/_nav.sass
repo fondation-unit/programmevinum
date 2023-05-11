@@ -6,6 +6,8 @@
   height: $header-height
   box-sizing: border-box
   z-index: 2
+  @media (max-width: $sm-breakpoint)
+    padding: 0 0 0 calc($x-padding / 3)
   &.solid
     background: $white-color
     z-index: 1
@@ -40,7 +42,6 @@
         text-transform: uppercase
         padding-top: 4px
         margin-left: calc($x-padding / 2 + 15px)
-
         &.append
           animation: append 500ms ease-in-out
           &::before
@@ -52,6 +53,8 @@
             margin-top: 8px
             background: $empire-color
             border-radius: 50%
+        @media (max-width: $sm-breakpoint)
+          display: none
 
     button#menu-trigger
       border: none
@@ -59,6 +62,9 @@
       justify-content: flex-end
       margin-right: $x-padding
       padding: 2px calc($x-padding / 2) 0 calc($x-padding / 2)
+      @media (max-width: $sm-breakpoint)
+        padding: 0
+        margin-right: calc($x-padding / 3)
       &:hover
         cursor: pointer
 

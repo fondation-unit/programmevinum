@@ -10,7 +10,7 @@
   background-position-x: 100px
   background-position-y: 100%
   box-shadow: $grid-box-shadow
-  transform: translateY(-110vh)
+  transform: translateY(-120vh)
   &.active
     animation: menuOpen 1750ms cubic-bezier(.19, 1, .22, 1) forwards
   &.close
@@ -50,6 +50,8 @@
           transition: .5s ease-out
           &:hover
             background-position: left
+          @media (max-width: $sm-breakpoint)
+            font-size: 1.15em
     .footer-menu
       display: flex
       flex-direction: row
@@ -57,9 +59,15 @@
       align-items: center
       padding-bottom: calc($x-padding / 4)
       width: 100%
+      @media (max-width: $sm-breakpoint)
+        ul
+          display: none
       .footer-aside
         flex: 1
         padding-left: $x-padding
+        @media (max-width: $sm-breakpoint)
+          padding-left: 0
+          text-align: center
       ul:last-child
         padding-right: $x-padding
       ul
@@ -72,6 +80,8 @@
             font-size: 1.1em
             color: $empire-color
             text-decoration: none
+            @media (max-width: $sm-breakpoint)
+              font-size: .85em
         .social-link
           .btn-social
             .bi

@@ -1,6 +1,8 @@
 .container
   font-size: $text-font-size
   padding: calc($y-padding * 2.5) $x-padding calc($y-padding * 3) $x-padding
+  @media (max-width: $sm-breakpoint)
+    padding: calc($y-padding * 2.5) calc($x-padding * 0.3) calc($y-padding * 3) calc($x-padding * 0.3)
 
   .part-title
     display: inline-flex
@@ -10,6 +12,8 @@
     font-size: 1.1em
     padding: $x-content-padding $x-padding
     margin-bottom: calc($y-padding * 0.75)
+    @media (max-width: $sm-breakpoint)
+      padding: 0
     span
       background-color: $empire-color
       color: $white-color
@@ -49,6 +53,8 @@
 
   .content
     padding: $y-padding $x-padding
+    @media (max-width: $sm-breakpoint)
+      padding: 0
 
     &.maxed-container
       max-width: $max-container-width
@@ -59,12 +65,16 @@
       .flex
         display: flex
         flex-wrap: nowrap
+        @media (max-width: $sm-breakpoint)
+          flex-direction: column
 
         .item
           display: flex
           flex-direction: column
           width: 50%
           align-self: center
+          @media (max-width: $sm-breakpoint)
+            width: 100%
           &-grow
             flex: 1
             width: auto
@@ -77,14 +87,22 @@
           &-40
             width: 40%
             align-self: flex-start
+            @media (max-width: $sm-breakpoint)
+              width: 100%
           &-60
             width: 60%
             align-self: flex-start
+            @media (max-width: $sm-breakpoint)
+              width: 100%
 
           &:first-child
             margin-right: calc($x-padding / 1.1)
+            @media (max-width: $sm-breakpoint)
+              margin-right: 0
           &:last-child
             margin-left: calc($x-padding / 1.1)
+            @media (max-width: $sm-breakpoint)
+              margin-left: 0
 
           p
             &:first-child

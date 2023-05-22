@@ -1,0 +1,26 @@
+.form
+  *
+    margin: 5px 0
+
+  input[type="text"],
+  input[type="email"],
+  textarea
+    border: 2px solid $empire-color
+    padding: 10px 15px
+    font-family: $bold-font
+    font-size: .85em
+    color: $imperial-color
+
+  input.secondary
+    display: none
+
+  input[type="submit"]
+    border: none
+    text-decoration: none
+    width: fit-content
+    &:hover
+      background-color: $menthe-color
+      color: $empire-color
+      cursor: pointer
+      &::after
+        width: 100%

@@ -356,7 +356,15 @@ svg path {
   width: auto;
   padding: 40px;
 }
-.header-container .header svg#pattern {
+@media (max-width: 830px) {
+  .header-container .header {
+    background-image: url(../src/images/pattern.svg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.header-container .header svg#header-pattern {
   position: absolute;
   left: 0;
   bottom: -60px;
@@ -365,9 +373,14 @@ svg path {
   overflow: hidden;
 }
 @media (max-width: 1280px) {
-  .header-container .header svg#pattern {
+  .header-container .header svg#header-pattern {
     width: 100vw;
     max-width: 100%;
+  }
+}
+@media (max-width: 830px) {
+  .header-container .header svg#header-pattern {
+    display: none;
   }
 }
 .header-container .header .flex {
@@ -1443,10 +1456,10 @@ ul.reseau-items li.reseau-item a::after {
 }
 
 .item-40 {
-  width: 40% !important;
+  width: 40%;
 }
 .item-42 {
-  width: 42% !important;
+  width: 42%;
 }
 .item-grow {
   flex-grow: 1;

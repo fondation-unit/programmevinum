@@ -1372,11 +1372,7 @@ footer ul.footer-menu li a {
 #carte {
   position: relative;
   height: 500px;
-}
-#carte img {
-  position: absolute;
-  display: block;
-  height: auto;
+  fill: #8ea18c;
 }
 
 #reseau .reseau-item {

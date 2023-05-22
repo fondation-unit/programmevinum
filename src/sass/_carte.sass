@@ -9,3 +9,61 @@
     position: absolute
     display: block
     height: auto
+
+#reseau
+  .reseau-item
+    transition: all .25s
+    circle
+      fill: $menthe-color
+      transition: all .25s
+      &:hover
+        cursor: pointer
+    &.active
+      circle
+        fill: $aurore-color
+        animation: .5s ease infinite pulse
+        stroke: $empire-color
+        stroke-width: 3px
+
+h4.reseau-title
+  margin-top: 0
+  margin-bottom: 0
+  font-size: .9em
+
+ul.reseau-items
+  padding-left: 0
+  list-style: none
+  li.reseau-item
+    font-size: .8em
+    &.active
+      a
+        color: $abricot-color
+        &::after
+          content: ""
+          height: 2px
+          width: 100%
+          position: absolute
+          bottom: -3px
+          left: 0
+          background-color: $aurore-color
+          transition: all .3s
+
+    a
+      position: relative
+      color: $empire-color
+      text-decoration: none
+      transition: all .3s
+      &:hover
+        color: $abricot-color
+        background-color: transparent
+        &::after
+          width: 100%
+      &::after
+        content: ""
+        height: 2px
+        width: 0
+        position: absolute
+        bottom: -3px
+        left: 0
+        background-color: $aurore-color
+        transition: all .3s

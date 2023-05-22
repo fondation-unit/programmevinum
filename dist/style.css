@@ -35,8 +35,16 @@
   margin-top: 40px !important;
 }
 
-.mt-40 {
+.mb-40 {
   margin-bottom: 40px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.pb-50 {
+  padding-bottom: 50px !important;
 }
 
 .ml-wide {
@@ -75,6 +83,12 @@
   display: flex;
 }
 
+@media (max-width: 830px) {
+  .d-sm-none {
+    display: none !important;
+  }
+}
+
 .column {
   flex-direction: column;
   width: 100%;
@@ -86,6 +100,10 @@
 
 .align-items-center {
   align-items: center;
+}
+
+.align-self-center {
+  align-self: center !important;
 }
 
 span.menu-dot {
@@ -562,19 +580,19 @@ svg path {
 }
 .header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .card-text {
   font-family: "Satoshi-Black", sans-serif;
-  font-size: 1.17em;
+  font-size: 1.152em;
   text-align: center;
   color: #1d3630;
 }
 @media (max-width: 1084px) {
   .header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .card-text {
-    font-size: 0.975em;
+    font-size: 0.96em;
     margin-bottom: 15px;
   }
 }
 @media (max-width: 926px) {
   .header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .card-text {
-    font-size: 0.845em;
+    font-size: 0.832em;
   }
 }
 .header-container .header .flex .card-group-wrapper .card-group .card-wrapper .card .action {
@@ -706,7 +724,7 @@ svg path {
 }
 
 .container {
-  font-size: 1.3em;
+  font-size: 1.28em;
   padding: 100px 40px 120px 40px;
 }
 @media (max-width: 830px) {
@@ -1118,7 +1136,7 @@ legend a img {
 .social-list li {
   flex-direction: row;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.28em;
   transition: all 0.3s;
 }
 @media (max-width: 830px) {
@@ -1218,7 +1236,7 @@ footer {
   display: flex;
   background: #1d3630;
   color: #FFFFFF;
-  font-size: 1.04em;
+  font-size: 1.024em;
   padding: 60px 40px;
   flex-flow: row nowrap;
 }

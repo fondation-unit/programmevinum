@@ -14,7 +14,7 @@ $text-font: "Satoshi-Light", sans-serif
 $bold-font: "Satoshi-Bold", sans-serif
 $black-font: "Satoshi-Black", sans-serif
 
-$text-font-size: 1.3em
+$text-font-size: 1.28em
 $logo-font-size: 2em
 
 // Paddings
@@ -51,8 +51,12 @@ $grid-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px
     margin-left: 0 !important
 .mt-40
   margin-top: 40px !important
-.mt-40
+.mb-40
   margin-bottom: 40px !important
+.mb-0
+  margin-bottom: 0px !important
+.pb-50
+  padding-bottom: 50px !important
 .ml-wide
   margin-left: calc($x-padding * 1.8) !important
   @media (max-width: $max-container-width)
@@ -69,6 +73,9 @@ $grid-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px
   padding: 0 !important
 .d-flex
   display: flex
+.d-sm-none
+  @media (max-width: $sm-breakpoint)
+    display: none !important
 .column
   flex-direction: column
   width: 100%
@@ -76,6 +83,8 @@ $grid-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px
   justify-content: center
 .align-items-center
   align-items: center
+.align-self-center
+  align-self: center !important
 
 span.menu-dot
   display: inline-block

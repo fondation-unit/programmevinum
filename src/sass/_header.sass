@@ -13,8 +13,13 @@
     color: $empire-color
     width: auto
     padding: $x-padding
+    @media (max-width: $sm-breakpoint)
+      background-image: $pattern-image
+      background-position: left bottom
+      background-repeat: no-repeat
+      background-size: cover
 
-    svg#pattern
+    svg#header-pattern
       position: absolute
       left: 0
       bottom: -60px
@@ -24,6 +29,8 @@
       @media (max-width: $max-container-width)
         width: 100vw
         max-width: 100%
+      @media (max-width: $sm-breakpoint)
+        display: none
 
     .flex
       display: flex

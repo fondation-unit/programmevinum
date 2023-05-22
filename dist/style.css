@@ -352,6 +352,7 @@ svg path {
 @media (min-height: 630px) {
   .header-container {
     height: 100vh;
+    min-height: -webkit-fill-available;
   }
 }
 .header-container .header {

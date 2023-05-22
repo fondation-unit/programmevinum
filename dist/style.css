@@ -48,7 +48,7 @@
 }
 
 .ml-wide {
-  margin-left: 72px !important;
+  margin-left: 60px !important;
 }
 @media (max-width: 1280px) {
   .ml-wide {
@@ -62,7 +62,7 @@
 }
 
 .mr-wide {
-  margin-right: 72px !important;
+  margin-right: 60px !important;
 }
 @media (max-width: 1280px) {
   .mr-wide {
@@ -104,6 +104,10 @@
 
 .align-self-center {
   align-self: center !important;
+}
+
+.align-self-start {
+  align-self: flex-start !important;
 }
 
 span.menu-dot {
@@ -936,11 +940,11 @@ svg path {
 
 .sep {
   height: 1px;
-  background-color: #1d3630;
+  background-color: #ccdbc8;
   margin: 40px 0;
 }
 .sep-2x {
-  margin: 44px 0;
+  margin: 32px 0;
 }
 
 legend {
@@ -1443,7 +1447,10 @@ ul.reseau-items li.reseau-item a::after {
 }
 
 .item-40 {
-  width: 40%;
+  width: 40% !important;
+}
+.item-42 {
+  width: 42% !important;
 }
 .item-grow {
   flex-grow: 1;

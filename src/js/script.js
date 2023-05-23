@@ -1,4 +1,5 @@
 const IMG_FOLDER = "./src/images/";
+const SM_BREAKPOINT = 830;
 
 function setWindowHeight() {
   var windowHeight = window.innerHeight;

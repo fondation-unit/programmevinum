@@ -56,12 +56,19 @@
       .slogan-div
         padding-right: calc($x-padding * 1.5)
         margin-bottom: $y-padding
+        @media (max-width: $sm-breakpoint)
+          flex-grow: 1
+          display: flex
+          align-items: center
+          padding-right: 0
 
         .slogan
           flex: 1
           margin-top: calc($y-padding * 2)
           width: 100%
           padding-right: calc($x-padding * 1.5)
+          @media (max-width: $sm-breakpoint)
+            padding-right: 0
 
           .logo
             font-family: $headings-font
@@ -99,9 +106,18 @@
             display: none
             font-family: $headings-font
             text-transform: uppercase
-            font-size: 3vw
+            font-size: 4vw
             @media (max-width: $sm-breakpoint)
               display: flex
+
+          .mobile-buttons
+            display: none
+            font-size: .8em
+            flex-direction: column
+            @media (max-width: $sm-breakpoint)
+              display: flex
+            a
+              align-self: flex-start
 
       .card-group-wrapper
         display: flex

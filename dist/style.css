@@ -412,11 +412,24 @@ svg path {
   padding-right: 60px;
   margin-bottom: 40px;
 }
+@media (max-width: 830px) {
+  .header-container .header .flex .slogan-div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+  }
+}
 .header-container .header .flex .slogan-div .slogan {
   flex: 1;
   margin-top: 80px;
   width: 100%;
   padding-right: 60px;
+}
+@media (max-width: 830px) {
+  .header-container .header .flex .slogan-div .slogan {
+    padding-right: 0;
+  }
 }
 .header-container .header .flex .slogan-div .slogan .logo {
   font-family: "JetBrainsMono-Bold";
@@ -464,12 +477,25 @@ svg path {
   display: none;
   font-family: "JetBrainsMono-Bold";
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 @media (max-width: 830px) {
   .header-container .header .flex .slogan-div .slogan .slogan-main-mobile {
     display: flex;
   }
+}
+.header-container .header .flex .slogan-div .slogan .mobile-buttons {
+  display: none;
+  font-size: 0.8em;
+  flex-direction: column;
+}
+@media (max-width: 830px) {
+  .header-container .header .flex .slogan-div .slogan .mobile-buttons {
+    display: flex;
+  }
+}
+.header-container .header .flex .slogan-div .slogan .mobile-buttons a {
+  align-self: flex-start;
 }
 .header-container .header .flex .card-group-wrapper {
   display: flex;
@@ -1220,12 +1246,7 @@ a.news-wrapper:hover .news span.dot {
 }
 @media (max-width: 830px) {
   a.news-wrapper.top {
-    position: relative;
-    top: auto;
-    display: flex;
-    align-self: flex-start;
-    margin-top: 0px;
-    padding-right: 0;
+    display: none;
   }
 }
 a.news-wrapper .news {

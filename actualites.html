@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Programme Vinum</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+    content="Actualités du Programme Vinum - Formations aux métiers des filières agricoles, viticoles et forestières.">
   <link rel="icon" href="/src/images/favicon.png" />
   <link href="/dist/style.css" rel="stylesheet">
 </head>
@@ -14,22 +16,22 @@
     <div class="menu-container">
       <ul class="menu-links">
         <li class="menu-link">
-          <a class="menu-href-secondary" href="actualites.html">
+          <a class="menu-href-secondary" href="/actualites/">
             <span class="menu-dot"></span>
             Nos actualités
           </a>
         </li>
         <li class="menu-link">
-          <a class="menu-href-secondary" href="index.html#decouvrez-le-programme">Découvrez le programme</a>
+          <a class="menu-href-secondary" href="/#decouvrez-le-programme">Découvrez le programme</a>
         </li>
         <li class="menu-link">
-          <a class="menu-href-secondary" href="index.html#utilisez-les-services-vinum">Utilisez les services Vinum</a>
+          <a class="menu-href-secondary" href="/#utilisez-les-services-vinum">Utilisez les services Vinum</a>
         </li>
         <li class="menu-link">
-          <a class="menu-href-secondary" href="index.html#rejoignez-nous">Rejoignez-nous</a>
+          <a class="menu-href-secondary" href="/#rejoignez-nous">Rejoignez-nous</a>
         </li>
         <li class="menu-link">
-          <a class="menu-href-secondary" href="index.html#retrouvez-nous">Retrouvez-nous sur les réseaux</a>
+          <a class="menu-href-secondary" href="/#retrouvez-nous">Retrouvez-nous sur les réseaux</a>
         </li>
       </ul>
 
@@ -89,14 +91,14 @@
       <div class="nav-inner">
         <div class="nav-start">
           <div class="nav-logo">
-            <a href="index.html">
-              <img class="site-logo" src="/src/images/logo2.svg" alt="Logo programme Vinum" width="100px">
+            <a href="/">
+              <img class="site-logo" src="/src/images/logo2.svg" alt="Logo du programme Vinum" width="100px">
             </a>
           </div>
           <div class="part-title-zone"></div>
         </div>
         <button id="menu-trigger" alt="Ouverture du menu">
-          <img id="menu-trigger-icon" src="/src/images/menu-icon.svg">
+          <img id="menu-trigger-icon" alt="Icône du menu de navigation" src="/src/images/menu-icon.svg">
         </button>
       </div>
       <div class="scroller"></div>
@@ -165,7 +167,7 @@
             target="_blank">
             <h3>Vinum, nouveau modèle de formation viticole</h3>
           </a>
-          <img src="src/images/ecole-vinum.jpg" class="img-fluid">
+          <img src="/src/images/ecole-vinum.jpg" class="img-fluid">
           <p>
             Le programme Vinum mise sur les outils numériques et la réalité virtuelle pour dépoussiérer la formation
             viticole.
@@ -226,20 +228,32 @@
         </ul>
       </div>
 
-      <div class="flex justify-content-center">
-        <a href="https://a073e96a.sibforms.com/serve/MUIEAD7T8WAbGNGNFTC6maTNalx9XpCwwCEb9itL8iWNSr0tVxvysE8wybSb0wHeMIJqD-N3BJeAGF2DQ80DuaaOHsZ9BPcu7ZOdmS4cGbyirufTTk2Z_15IZLEpuQk8dnwU-YffA_mfd_y2D4J-FZD0wdn0vCtv9HAT-qGx6E4VJq6w46yowORoLhML0HplWQaAhiY8MNEzgD6Z%22"
-          class="news-wrapper p-0" target="_blank">
-          <div class="news">
-            <span class="dot"></span>
-            Inscrivez-vous à notre newsletter
-            <span class="arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 15 14" class="">
-                <path d="M12.7 7.604H1.386v-1h11.728L8.457 1.947l.707-.707 5.657 5.656-6.01 6.01-.707-.706L12.7 7.604z">
-                </path>
-              </svg>
-            </span>
-          </div>
-        </a>
+      <div class="flex justify-content-center mt-40">
+        <form method="post" class="item form mt-40 ml-20" action="/contact.php" id="contact-form">
+          <h3 class="mb-20">Contactez-nous</h3>
+          <input name="firstname" type="text" id="firstname" autocomplete="off" class="secondary">
+          <input name="email" type="email" id="email" placeholder="Votre email..." alt="Adresse email" required><br>
+          <textarea name="message" id="message" placeholder="Votre message..." alt="Message de contact"
+            required></textarea><br>
+          <input type="submit" alt="Envoi du formulaire de contact" class="btn-link">
+        </form>
+
+        <div class="item align-self-center">
+          <a href="https://a073e96a.sibforms.com/serve/MUIEAD7T8WAbGNGNFTC6maTNalx9XpCwwCEb9itL8iWNSr0tVxvysE8wybSb0wHeMIJqD-N3BJeAGF2DQ80DuaaOHsZ9BPcu7ZOdmS4cGbyirufTTk2Z_15IZLEpuQk8dnwU-YffA_mfd_y2D4J-FZD0wdn0vCtv9HAT-qGx6E4VJq6w46yowORoLhML0HplWQaAhiY8MNEzgD6Z%22"
+            class="news-wrapper align-self-center p-0" target="_blank">
+            <div class="news">
+              <span class="dot"></span>
+              Inscrivez-vous à notre newsletter
+              <span class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 15 14" class="">
+                  <path
+                    d="M12.7 7.604H1.386v-1h11.728L8.457 1.947l.707-.707 5.657 5.656-6.01 6.01-.707-.706L12.7 7.604z">
+                  </path>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -247,23 +261,31 @@
   <footer>
     <aside class="footer-aside">
       &copy;2023 Programme Vinum
+      <div class="d-flex align-items-center">
+        <a href="https://www.banquedesterritoires.fr/" aria-label="Site web Banque des Territoires - Caisse des Dépôts"
+          target="_blank">
+          <img src="./src/images/logos/logo-banque-des-territoires-caisse-des-depots-alt.svg"
+            alt="Logo de la Banque des Territoires et de la Caisse des Dépôts" width="220px">
+        </a>
+        <img src="./src/images/logos/logo-france-2030-alt.png" alt="Logo France 2030" width="75px" class="ml-20">
+      </div>
     </aside>
-    <ul class="footer-menu">
+    <div class="footer-menu">
       <ul class="menu-links">
         <li class="menu-link">
-          <a class="menu-href-secondary" href="actualites.html">Nos actualités</a>
+          <a class="menu-href-secondary" href="/actualites/">Nos actualités</a>
         </li>
         <li class="menu-link">
-          <a class="menu-href-secondary" href="index.html#decouvrez-le-programme">Découvrez le programme</a>
+          <a class="menu-href-secondary" href="/#decouvrez-le-programme">Découvrez le programme</a>
         </li>
         <li class="menu-link">
-          <a class="menu-href-secondary" href="index.html#utilisez-les-services-vinum">Utilisez les services Vinum</a>
+          <a class="menu-href-secondary" href="/#utilisez-les-services-vinum">Utilisez les services Vinum</a>
         </li>
         <li class="menu-link">
-          <a class="menu-href-secondary" href="index.html#rejoignez-nous">Rejoignez-nous</a>
+          <a class="menu-href-secondary" href="/#rejoignez-nous">Rejoignez-nous</a>
         </li>
         <li class="menu-link">
-          <a class="menu-href-secondary" href="index.html#retrouvez-nous">Retrouvez-nous sur les réseaux</a>
+          <a class="menu-href-secondary" href="/#retrouvez-nous">Retrouvez-nous sur les réseaux</a>
         </li>
         <li class="menu-link">
           <a class="menu-href-secondary" target="_blank"
@@ -272,8 +294,8 @@
           </a>
         </li>
       </ul>
-    </ul>
-    <ul class="footer-menu">
+    </div>
+    <div class="footer-menu">
       <ul class="menu-links">
         <li class="menu-link">
           <a class="menu-href" href="#utilisez-les-services-vinum">Mentions légales</a>
@@ -282,7 +304,7 @@
           <a class="menu-href" href="#utilisez-les-services-vinum">Politique de confidentialité</a>
         </li>
       </ul>
-    </ul>
+    </div>
   </footer>
 
   <script src="/src/js/script.js"></script>

@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Programme Vinum</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+    content="Programme Vinum - Accélérer la transition numérique des formations aux métiers des filières agricoles, viticoles et forestières.">
   <link rel="icon" href="./src/images/favicon.png" />
   <link href="./dist/style.css" rel="stylesheet">
 </head>
@@ -14,7 +16,7 @@
     <div class="menu-container">
       <ul class="menu-links">
         <li class="menu-link">
-          <a class="menu-href-secondary" href="actualites.html">
+          <a class="menu-href-secondary" href="/actualites/">
             <span class="menu-dot"></span>
             Nos actualités
           </a>
@@ -107,7 +109,7 @@
           <div class="part-title-zone"></div>
         </div>
         <button id="menu-trigger" alt="Ouverture du menu">
-          <img id="menu-trigger-icon" src="./src/images/menu-icon.svg">
+          <img id="menu-trigger-icon" alt="Icône du menu de navigation" src="./src/images/menu-icon.svg">
         </button>
       </div>
       <div class="scroller"></div>
@@ -311,7 +313,7 @@
 
         <div class="slogan-div">
           <h1 class="slogan">
-            <div class="logo"><img src="./src/images/logo2.svg" width="300px"></div>
+            <div class="logo"><img src="./src/images/logo2.svg" alt="Logo du programme Vinum" width="300px"></div>
             <div class="slogan-main">
               Au service des formations
             </div>
@@ -326,7 +328,7 @@
           </h1>
         </div>
 
-        <a href="actualites.html" class="news-wrapper top">
+        <a href="/actualites/" class="news-wrapper top">
           <div class="news">
             <span class="dot"></span>
             Nos dernières actualités
@@ -398,7 +400,7 @@
     </div>
     <div class="content maxed-container">
       <div class="flex">
-        <div class="item item-42 align-self-start mr-wide">
+        <div class="item align-self-start mr-wide">
           <p>Le programme Vinum a pour mission d’accélérer la transition numérique des formations aux métiers des
             filières agricoles, viticoles et forestières.</p>
 
@@ -410,16 +412,18 @@
 
           <p>Les principales régions viticoles françaises sont représentées au sein du groupement.</p>
         </div>
-        <div class="item item-grow ml-wide transition-inplace">
+        <div class="item item-60 ml-wide transition-inplace">
           <img src="src/images/ecole-vinum.jpg" class="img-fluid img-bordered" alt="L'École Vinum" name="L'École Vinum">
           <div class="sep sep-2x"></div>
           <legend>Vinum est lauréat de l’appel à manifestation d’intérêt Compétences et
             Métiers
             d’Avenir.<br>
             <a class="img-container" href="https://www.banquedesterritoires.fr/" target="_blank"
-              alt="Banque des Territoires - Caisse des Dépôts">
-              <img src="./src/images/logos/logo-banque-des-territoires-caisse-des-depots.svg" width="250px">
-              <img src="./src/images/logos/logo-france-2030.png" width="75px" class="ml-20">
+              alt="Banque des Territoires - Caisse des Dépôts"
+              aria-label="Site web Banque des Territoires - Caisse des Dépôts">
+              <img src="./src/images/logos/logo-banque-des-territoires-caisse-des-depots.svg"
+                alt="Logo de la Banque des Territoires et de la Caisse des Dépôts" width="250px">
+              <img src="./src/images/logos/logo-france-2030.png" alt="Logo France 2030" width="75px" class="ml-20">
             </a>
           </legend>
         </div>
@@ -448,19 +452,19 @@
             <a href="#" target="_blank" class="btn-link">En savoir +</a>
           </p>
         </div>
-        <div class="item transition-inplace">
+        <div class="item item-60 transition-inplace">
           <div class="grid-container">
             <figure class="gallery__item gallery__item--1">
-              <img src="./src/images/content-1.jpg" class="gallery__img" alt="Image 1">
+              <img src="./src/images/e-cab-1.jpg" class="gallery__img" alt="Image 1">
             </figure>
             <figure class="gallery__item gallery__item--2">
-              <img src="./src/images/content-2.jpg" class="gallery__img" alt="Image 2">
+              <img src="./src/images/e-cab-2.jpg" class="gallery__img" alt="Image 2">
             </figure>
             <figure class="gallery__item gallery__item--3">
-              <img src="./src/images/content-3.jpg" class="gallery__img" alt="Image 3">
+              <img src="./src/images/e-cab-3.jpg" class="gallery__img" alt="Image 3">
             </figure>
             <figure class="gallery__item gallery__item--4">
-              <img src="./src/images/content-4.jpg" class="gallery__img" alt="Image 4">
+              <img src="./src/images/e-cab-4.jpg" class="gallery__img" alt="Image 4">
             </figure>
           </div>
         </div>
@@ -925,10 +929,11 @@
       <div class="flex justify-content-center mt-40">
         <form method="post" class="item form mt-40 ml-20" action="/contact.php" id="contact-form">
           <h3 class="mb-20">Contactez-nous</h3>
-          <input name="firstname" type="text" id="firstname" class="secondary">
-          <input name="email" type="email" id="email" placeholder="Votre email..." required><br>
-          <textarea name="message" id="message" placeholder="Votre message..." required></textarea><br>
-          <input type="submit" class="btn-link">
+          <input name="firstname" type="text" id="firstname" autocomplete="off" class="secondary">
+          <input name="email" type="email" id="email" placeholder="Votre email..." alt="Adresse email" required><br>
+          <textarea name="message" id="message" placeholder="Votre message..." alt="Message de contact"
+            required></textarea><br>
+          <input type="submit" alt="Envoi du formulaire de contact" class="btn-link">
         </form>
 
         <div class="item align-self-center">
@@ -955,16 +960,18 @@
     <aside class="footer-aside">
       &copy;2023 Programme Vinum
       <div class="d-flex align-items-center">
-        <a href="https://www.banquedesterritoires.fr/" target="_blank">
-          <img src="./src/images/logos/logo-banque-des-territoires-caisse-des-depots-alt.svg" width="220px">
+        <a href="https://www.banquedesterritoires.fr/" aria-label="Site web Banque des Territoires - Caisse des Dépôts"
+          target="_blank">
+          <img src="./src/images/logos/logo-banque-des-territoires-caisse-des-depots-alt.svg"
+            alt="Logo de la Banque des Territoires et de la Caisse des Dépôts" width="220px">
         </a>
-        <img src="./src/images/logos/logo-france-2030-alt.png" width="75px" class="ml-20">
+        <img src="./src/images/logos/logo-france-2030-alt.png" alt="Logo France 2030" width="75px" class="ml-20">
       </div>
     </aside>
-    <ul class="footer-menu">
+    <div class="footer-menu">
       <ul class="menu-links">
         <li class="menu-link">
-          <a class="menu-href-secondary" href="actualites.html">Nos actualités</a>
+          <a class="menu-href-secondary" href="/actualites/">Nos actualités</a>
         </li>
         <li class="menu-link">
           <a class="menu-href" href="#decouvrez-le-programme">Découvrez le programme</a>
@@ -985,8 +992,8 @@
           </a>
         </li>
       </ul>
-    </ul>
-    <ul class="footer-menu">
+    </div>
+    <div class="footer-menu">
       <ul class="menu-links">
         <li class="menu-link">
           <a class="menu-href" href="#">Mentions légales</a>
@@ -995,7 +1002,7 @@
           <a class="menu-href" href="#">Politique de confidentialité</a>
         </li>
       </ul>
-    </ul>
+    </div>
   </footer>
 
   <script src="./src/js/script.js"></script>

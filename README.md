@@ -1,3 +1,3 @@
-# Site web Programme Vinum
+# Site web du Programme Vinum
 
-[https://fondation-unit.github.io/vinum-prototype/](https://fondation-unit.github.io/vinum-prototype/)
+[https://programmevinum.fr/](https://programmevinum.fr/)

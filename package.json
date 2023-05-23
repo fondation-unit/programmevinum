@@ -6,7 +6,7 @@
   },
   "scripts": {
     "sass": "sass --watch --no-source-map src/sass/main.sass dist/style.css",
-    "sass:prod": "sass --no-source-map src/sass/main.sass dist/style.css",
+    "sass:prod": "sass --no-source-map --style compressed src/sass/main.sass dist/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

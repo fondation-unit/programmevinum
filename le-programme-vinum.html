@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description"
     content="Actualités du Programme Vinum - Formations aux métiers des filières agricoles, viticoles et forestières.">
-  <link rel="icon" href="/src/images/favicon.png" />
-  <link href="/dist/style.css" rel="stylesheet">
+  <link rel="icon" href="./src/images/favicon.png" />
+  <link href="./dist/style.css" rel="stylesheet">
 </head>
 
 <body class="secondary">
@@ -121,7 +121,12 @@
             très courts.</p>
         </div>
         <div class="item item-40 mt-sm-40 ml-wide">
-          <img src="src/images/grains_de_raisin.jpg" class="img-fluid">
+          <picture>
+            <source type="image/webp" srcset="src/images/grains_de_raisin.jpg.webp">
+            <source type="image/avif" srcset="src/images/grains_de_raisin.jpg.avif">
+            <source type="image/jpeg" srcset="src/images/grains_de_raisin.jpg">
+            <img src="src/images/grains_de_raisin" alt="test" class="img-fluid">
+          </picture>
         </div>
       </div>
 

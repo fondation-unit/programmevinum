@@ -32,6 +32,23 @@
     &:hover
       filter: contrast(105%) brightness(95%)
 
+  &-green
+    background-color: $menthe-color
+    background-image: $menu-pattern
+    background-size: 300%
+    background-position: 100% 100%
+    background-repeat: repeat
+    color: $empire-color
+    max-width: 320px
+    @media (max-width: $sm-breakpoint)
+      margin-top: 40px
+    .icon
+      background-color: $white-color
+      padding: 10px
+      margin-right: 20px
+      align-self: center
+      border-radius: 4px
+
   .text
     flex: 1
     font-size: .95em

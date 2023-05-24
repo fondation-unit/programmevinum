@@ -31,3 +31,15 @@
     grid-area: 4 / 1 / 7 / 3
   .gallery__item--4
     grid-area: 4 / 3 / 7 / 6
+
+  &.grid-container-x2
+    box-shadow: none
+    .gallery__item
+      .gallery__img
+        transition: none
+        &:hover
+          transform: scale(1)
+    .gallery__item--1
+      grid-area: 1 / 1 / 7 / 3
+    .gallery__item--2
+      grid-area: 1 / 3 / 7 / 6

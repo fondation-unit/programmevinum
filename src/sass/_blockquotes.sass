@@ -1,0 +1,41 @@
+blockquote
+  display: flex
+  flex-direction: column
+  background-color: $menthe-color
+  margin: 0
+  padding: calc($y-padding / 2) calc($x-padding * 1.5)
+
+  p
+    color: $empire-color
+    font-style: italic
+    &::before
+      background-image: $quote-icon
+      background-repeat: no-repeat
+      background-size: cover
+      content: ""
+      height: 25px
+      width: 25px
+      position: absolute
+      margin-left: -25px
+      margin-top: -10px
+    &::after
+      background-image: $quote-icon
+      background-repeat: no-repeat
+      background-size: cover
+      content: ""
+      height: 25px
+      width: 25px
+      position: absolute
+      margin-left: 7px
+      margin-top: 3px
+      transform: scaleX(-1)
+    &:first
+      margin-top: 0
+
+  legend
+    color: $empire-color
+    font-family: $bold-font
+    font-size: .75em
+    margin-bottom: calc($y-padding / 2)
+    align-self: flex-end
+    text-align: right

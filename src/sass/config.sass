@@ -39,18 +39,35 @@ $empire-bg: url(../src/images/empire-bg.svg)
 $menu-pattern: url(../src/images/menu-pattern2.svg)
 $pattern-image: url(../src/images/pattern.svg)
 $pattern-white-image: url(../src/images/pattern-white.svg)
+$blockquote-pattern: url(../src/images/blockquote-pattern.svg)
+
+// Icons
+$quote-icon: url(../src/images/icons/quote.svg)
+$trophy-icon: url(../src/images/icons/trophy.svg)
 
 // Misc
 $line-width: 40px
 $grid-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
 
 // Utils
+.mt-0
+  margin-top: 0px !important
 .ml-20
   margin-left: 20px !important
   @media (max-width: $sm-breakpoint)
     margin-left: 0 !important
 .mt-40
   margin-top: 40px !important
+.mt-sm-40
+  @media (max-width: $sm-breakpoint)
+    margin-top: 40px !important
+.mb-sm-80
+  @media (max-width: $sm-breakpoint)
+    margin-bottom: 80px !important
+.mt-80
+  margin-top: 80px !important
+.mt-120
+  margin-top: 120px !important
 .mb-40
   margin-bottom: 40px !important
 .mb-10
@@ -59,6 +76,10 @@ $grid-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px
   margin-bottom: 20px !important
 .mb-0
   margin-bottom: 0px !important
+.ml-0
+  margin-left: 0px !important
+.pb-0
+  padding-bottom: 0px !important
 .pb-50
   padding-bottom: 50px !important
 .ml-wide
@@ -83,6 +104,12 @@ $grid-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px
 .column
   flex-direction: column
   width: 100%
+.flex-sm-reverse
+  @media (max-width: $sm-breakpoint)
+    flex-direction: column-reverse !important
+.d-sm-row
+  @media (max-width: $sm-breakpoint)
+    flex-direction: row !important
 .justify-content-center
   justify-content: center
 .align-items-center
@@ -91,6 +118,8 @@ $grid-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px
   align-self: center !important
 .align-self-start
   align-self: flex-start !important
+.menthe-bg
+  background-color: $menthe-color
 
 span.menu-dot
   display: inline-block
@@ -105,3 +134,6 @@ span.menu-dot
   &:hover
     background-color: $celadon-color
     animation: 2.5s ease infinite pulseAlt
+
+h2
+  font-family: $bold-font

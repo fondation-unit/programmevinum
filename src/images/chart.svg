@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2160 1986" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(0.99482,0,0,0.986039,-36.8211,-23.1391)">
+        <rect id="Plan-de-travail1" serif:id="Plan de travail1" x="37.013" y="23.467" width="2170.5" height="2013.21" style="fill:none;"/>
+        <g id="Plan-de-travail11" serif:id="Plan de travail1">
+            <g transform="matrix(1.00521,0,0,1.01416,-243.38,-872.094)">
+                <g>
+                    <g transform="matrix(1,0,0,1,1994.89,2767)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:70px;">Ampélos</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,1952.5,2863)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:70px;">978 626 €</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,318.323,1239)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:70px;">E</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,360.719,1239)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:70px;">-</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,403.115,1239)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:70px;">MAINT</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,275.927,1335)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:70px;">588 626 €</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,2147.5,935)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:70px;">E</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,2189.89,935)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:70px;">-</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,2232.29,935)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:70px;">CAB</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,2062.71,1031)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:70px;">330 626 €</text>
+                    </g>
+                    <path d="M1519,956C1868.41,956 2185.55,1160.14 2330,1478.03L1924.5,1662C1852.27,1503.05 1693.7,1400.98 1519,1400.98L1519,956Z" style="fill:rgb(142,161,140);"/>
+                    <path d="M2310.88,1438C2464,1734.8 2438.18,2092.3 2243.99,2364.02C2049.81,2635.74 1719.91,2776 1389.47,2727.34C1059.02,2678.67 783.58,2449.26 676,2133.1L1097.63,1989.68C1151.42,2147.76 1289.14,2262.47 1454.36,2286.8C1619.59,2311.13 1784.54,2241 1881.63,2105.14C1978.72,1969.28 1991.63,1790.53 1915.07,1642.13L2310.88,1438Z" style="fill:rgb(29,54,48);"/>
+                    <path d="M691.822,2175C583,1900.78 617.018,1590.43 782.656,1346.32C948.295,1102.21 1224.04,956.029 1518.96,956L1519,1401.22C1371.54,1401.23 1233.67,1474.32 1150.85,1596.37C1068.03,1718.43 1051.02,1873.6 1105.43,2010.72L691.822,2175Z" style="fill:rgb(77,89,76);"/>
+                    <g transform="matrix(1.00558,0,0,1,1788.04,1857.34)">
+                        <g>
+                            <g>
+                                <path d="M31.165,4.369C32.462,4.388 33.655,5.071 34.33,6.178C34.812,7.042 34.949,8.056 34.707,9.015C34.002,12.449 33.426,15.903 32.901,19.337C32.812,20.005 32.61,20.675 32.61,21.343C33.606,20.982 34.492,20.694 35.595,20.223C36.696,19.752 37.819,19.265 38.922,18.759L40.836,17.927L42.336,17.294L43.62,17.149L43.838,17.149C44.766,17.276 45.619,17.73 46.241,18.433C46.274,18.463 46.306,18.495 46.335,18.527C47.719,19.965 47.679,22.253 46.241,23.639C45.579,24.306 44.685,24.689 43.749,24.705C41.272,25.79 38.793,26.893 36.282,27.905C35.057,28.449 33.795,28.901 32.503,29.262C31.945,29.404 31.399,29.496 30.839,29.622C32.548,30.242 34.198,31.022 35.757,31.953C36.826,32.551 37.854,33.329 38.632,33.851C39.41,34.376 40.365,35.028 41.216,35.66C42.048,36.322 42.922,36.928 43.838,37.469C45.574,38.492 46.152,40.729 45.13,42.465C44.107,44.204 41.867,44.782 40.131,43.759C39.251,43.218 38.408,42.616 37.62,41.951L35.34,40.287C33.472,38.906 31.483,37.695 29.396,36.672L29.232,38.481L28.796,42.096L28.581,44.066C28.54,44.979 28.39,45.883 28.129,46.758C27.854,47.673 27.254,48.457 26.449,48.963C26.406,48.99 26.366,49.014 26.322,49.038C24.581,50.01 22.376,49.388 21.405,47.646C21.103,47.162 20.896,46.632 20.791,46.072C20.551,45.008 20.767,43.894 21.386,42.998C21.585,41.299 21.784,39.62 21.965,37.918C22.145,37.197 22.145,36.473 22.145,35.749L19.469,37.865L15.854,40.758L14.048,42.096C13.437,42.626 12.778,43.1 12.078,43.506C11.211,43.983 10.196,44.115 9.238,43.867C8.869,43.776 8.514,43.628 8.191,43.423C6.498,42.368 5.978,40.139 7.033,38.443C7.031,38.384 7.031,38.322 7.033,38.263C7.51,37.523 8.212,36.957 9.042,36.653C9.526,36.311 9.997,35.894 10.449,35.569L11.951,34.411C15.133,31.937 18.277,29.423 21.459,26.947C21.152,26.637 20.807,26.368 20.519,26.043C19.415,24.869 18.331,23.677 17.3,22.427C16.705,21.668 16.072,20.891 15.494,20.078C15.189,19.65 14.923,19.197 14.697,18.721C14.148,17.685 14.019,16.473 14.336,15.343C14.928,13.413 16.942,12.301 18.891,12.829C20.325,13.259 21.372,14.49 21.566,15.975L22.091,16.697C23.103,17.873 24.169,19.119 25.292,20.315C25.453,19.265 25.598,18.196 25.76,17.149C26.279,13.776 26.839,10.396 27.44,7.009C27.69,6.075 28.304,5.281 29.141,4.802C29.763,4.471 30.462,4.32 31.165,4.369Z" style="fill:rgb(29,54,48);fill-rule:nonzero;stroke:black;stroke-width:0.03px;"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="matrix(1,0,0,1,1403.83,1848)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:80px;fill:rgb(29,54,48);">TOTAL</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,1259.46,1958)">
+                        <text x="0px" y="0px" style="font-family:'JetBrainsMono-Bold', 'JetBrains Mono', monospace;font-weight:700;font-size:80px;fill:rgb(29,54,48);">2 050 045 €</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -104,6 +104,9 @@ $grid-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px
 .column
   flex-direction: column
   width: 100%
+.flex-sm-reverse
+  @media (max-width: $sm-breakpoint)
+    flex-direction: column-reverse !important
 .d-sm-row
   @media (max-width: $sm-breakpoint)
     flex-direction: row !important

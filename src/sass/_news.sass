@@ -16,6 +16,8 @@ a.news-wrapper
       span.dot
         background-color: $celadon-color
         animation: 2.5s ease infinite pulseAlt
+  @media (max-width: $sm-breakpoint)
+    padding-right: 0
   &.top
     @media (max-width: $lg-breakpoint) and (max-height: $min-header-height)
       position: absolute
@@ -39,8 +41,6 @@ a.news-wrapper
     border: 2px solid $empire-color
     box-sizing: content-box
     transition: all .3s
-    @media (max-width: $sm-breakpoint)
-      padding-right: 0
     span
       display: inline-block
       width: 16px

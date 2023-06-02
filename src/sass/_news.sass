@@ -1,21 +1,23 @@
-a.news-wrapper
+.news-wrapper
   display: flex
   align-self: flex-end
   text-decoration: none
   margin-top: calc($y-padding * 1)
   padding-right: calc($x-padding * 1.5)
-  &:hover
-    .news
-      background-color: $aurore-color
-      color: $black-color
-      border: 2px solid $black-color
-      span
-        svg
-          path
-            fill: $black-color
-      span.dot
-        background-color: $celadon-color
-        animation: 2.5s ease infinite pulseAlt
+  a
+    text-decoration: none
+    &:hover
+      .news
+        background-color: $aurore-color
+        color: $black-color
+        border: 2px solid $black-color
+        span
+          svg
+            path
+              fill: $black-color
+        span.dot
+          background-color: $celadon-color
+          animation: 2.5s ease infinite pulseAlt
   @media (max-width: $sm-breakpoint)
     padding-right: 0
   &.top
@@ -27,6 +29,13 @@ a.news-wrapper
       position: absolute
       top: 10vh
       align-self: flex-start
+    @media (max-width: $lg-breakpoint)
+      flex-direction: column
+      a
+        text-align: center
+        &:last-child
+          margin-top: 20px
+          margin-left: 0 !important
     @media (max-width: $sm-breakpoint)
       display: none
 

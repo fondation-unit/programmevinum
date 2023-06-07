@@ -5,6 +5,15 @@
   grid-column-gap: 8px
   grid-row-gap: 8px
   box-shadow: $grid-box-shadow
+  &.figcaption
+    grid-row-gap: 30px
+    @media (max-width: $lg-breakpoint)
+      grid-row-gap: 55px
+  figcaption
+    padding: 0 10px
+    background: $menthe-color
+    color: $empire-color
+    font-size: 0.85em
 
   .gallery__item
     margin: 1px

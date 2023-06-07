@@ -51,6 +51,8 @@
     grid-template-rows: repeat(6, 1fr)
     grid-column-gap: 0px
     grid-row-gap: 0px
+    &.figcaption
+      grid-row-gap: 25px
     .gallery__item
       .gallery__img
         transition: none
@@ -62,3 +64,8 @@
       grid-area: 5 / 1 / 7 / 3
     .gallery__item--3
       grid-area: 5 / 3 / 7 / 5
+    figcaption
+      padding: 0 10px
+      background: $menthe-color
+      color: $empire-color
+      font-size: 0.85em

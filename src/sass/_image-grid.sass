@@ -5,6 +5,15 @@
   grid-column-gap: 8px
   grid-row-gap: 8px
   box-shadow: $grid-box-shadow
+  &.figcaption
+    grid-row-gap: 30px
+    @media (max-width: $lg-breakpoint)
+      grid-row-gap: 55px
+  figcaption
+    padding: 0 10px
+    background: $menthe-color
+    color: $empire-color
+    font-size: 0.85em
 
   .gallery__item
     margin: 1px
@@ -43,3 +52,29 @@
       grid-area: 1 / 1 / 7 / 3
     .gallery__item--2
       grid-area: 1 / 3 / 7 / 6
+
+  &.grid-container-x3
+    box-shadow: none
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(6, 1fr)
+    grid-column-gap: 0px
+    grid-row-gap: 0px
+    &.figcaption
+      grid-row-gap: 25px
+    .gallery__item
+      .gallery__img
+        transition: none
+        &:hover
+          transform: scale(1)
+    .gallery__item--1
+      grid-area: 1 / 1 / 5 / 5
+    .gallery__item--2
+      grid-area: 5 / 1 / 7 / 3
+    .gallery__item--3
+      grid-area: 5 / 3 / 7 / 5
+    figcaption
+      padding: 0 10px
+      background: $menthe-color
+      color: $empire-color
+      font-size: 0.85em
